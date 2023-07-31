@@ -1,0 +1,33 @@
+<!DOCTYPE html>: Every HTML document must begin with a DOCTYPE declaration.
+
+<html>: HTML (Hyper Text Markup Language) is a language used to define the structure of online pages. Like building blocks with semantic meaning. It represents the root of an HTML page, it is also known as the root element. All other components must be descended from this one.
+
+<head>: It contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.
+
+<base>: Specifies the base URL to use for all relative URLs in a document. There can be only one base element.
+
+<link>: This element is most commonly used to link to CSS, favicons, or icons. Specifies relationships between the current document and an external resource.
+
+<meta>: This HTML element represents metadata that cannot be represented by other HTML meta-related elements, like <base>, <link>, <title>…
+
+<style>: Contains style information for a document, or part of a document. It contains CSS, which is applied to the contents of the document containing this element.
+
+<title>: The title of the website that will be displayed in the web browser.
+
+<body>: It represents the content of an HTML document. There can be only one body element. It is always used after <head>.
+
+<header>: The website’s header usually contains the company logo, a search bar, and titles.
+
+<nav>: Usually used inside the header element. It contains navigation links.
+
+<main>: The dominant content of the body of a document. Use only one <main> for each document.
+
+<article>: It should be used for independent content with a clear topic. Like a magazine or newspaper article, or a blog entry, a forum post, a product card or a user comment.
+
+<h1>-<h6>: A heading element should always be used to identify each article. Use only one h1 for each document.
+
+<aside>: An aside is just a sidebar or another section with complementary text indirectly related to the document’s main content.
+
+<footer>: Footer of the Website: Legal, Info, Address, Copyright…
+
+<address>: Usually used inside the footer. Contact information may include a physical address, URL, email address, phone number, social media, and so on.
