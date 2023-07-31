@@ -86,14 +86,16 @@
 
 	<!-- Forms -->
 	<form action="about.py" method="POST">
+		<fieldset>
+			<legend>Personal information's</legend>
 		<div>
-			<label>First Name</label>
-			<input type="text" name="firstName" placeholder="Enter First Name">
+			<label for="firstname">First Name</label>
+			<input type="text" id="firstname" name="firstName" size="25" placeholder="Enter Your First Name">
 		</div>
 		<br>
 		<div>
 			<label>Last Name</label>
-			<input type="text" name="lastName">
+			<input type="text" name="lastName" size="25" placeholder="Enter Your Last Name">
 		</div>
 		<br>
 		<div>
@@ -102,8 +104,9 @@
 		</div>
 		<br>
 		<div>
-			<label>Message</label>
-			<textarea name="message"></textarea>
+			<label for="message">Message</label>
+			<!-- simple comment: -->
+			<textarea id="message" name="message" rows="30" cols="50"></textarea>
 		</div>
 		<br>
 		<div>
@@ -117,7 +120,7 @@
 		<br>
 		<div>
 			<label>Age:</label>
-			<input type="number" name="age" value="30">
+			<input type="number" name="age" value="30" min="0" max="100">
 		</div>
 		<br>
 		<div>
@@ -125,8 +128,27 @@
 			<input type="date" name="birthday">
 		</div>
 		<br>
+		Yes:
+		<input type="radio" name="yesorno" value="y">
+		No:
+		<input type="radio" name="yesorno" value="n">
+
+		<br>
+		<br>
+
+		Which item are you interested in?<br>
+		<input type="checkbox" name="apple" checked="checked" id=""> Apple<br>
+		<input type="checkbox" name="orange" id=""> Orange<br>
+		<input type="checkbox" name="banana" id=""> Banana<br>
+		<input type="checkbox" name="lemon" id=""> Lemon<br>
+
+		<br>
+		<br>
+
+
 		<input type="submit" name="submit" value="Submit">
 	</form>
+</fieldset>
 
 	<br>
 
@@ -137,12 +159,36 @@
 	<br>
 	<!-- Images -->
 	<a href="images/gandalf.jpg">
-	<img src="images/gandalf.jpg" alt="Gandalf" width="300" height="100">
+		<img src="images/gandalf.jpg" title="Gandalf" alt="Gandalf" width="300" height="100">
 	</a>
-
+	
 	<br>
 	<hr>
 	<br>
+	<iframe width="200" height="200" src="blog.html" frameborder="1" name="myiframe" id="myiframe">
+		Do you see this?
+	</iframe> <br>
+	<a href="https://www.varzesh3.com" target="myiframe">Check Google.com</a>
+
+	<br>
+	<br>
+	<br>
+	<audio controls="audiocontrols" src="sounds/Don't-Wanna-MissA-Thing.mp3">
+		<!-- <source src="sounds/Don't-Wanna-MissA-Thing.mp3"> -->
+	</audio>
+
+	<br>
+	<br>
+	<br>
+
+	<video src=""></video>
+
+	<br>
+	<br>
+	<br>
+	<hr>
+	<br>
+
 
 	<!-- Quotations -->
 	<blockquote cite="https://www.youtube.com">
@@ -163,9 +209,21 @@
 	<hr>
 	<br>
 
+
 	<p>
 		This is <cite>HTML Full Course</cite> by Ali Darvishi
 	</p>
+
+	<!-- Escape Characters -->
+	&nbsp;
+	&#8482;
+	&amp;
+	&it;
+	&gt;
+	&#63;
+	&copy;
+	<sup>ok</sup>
+	<sub>ok</sub>
 
 	<div style="margin-top:500px"></div>
 </body>
