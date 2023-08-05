@@ -86,77 +86,92 @@
 
 	<!-- Forms -->
 	<form action="about.py" method="POST">
+		<!-- Filedset -->
 		<fieldset>
-			<legend>Personal information's</legend>
-		<div>
-			<label for="firstname">First Name</label>
-			<input type="text" id="firstname" name="firstName" size="25" placeholder="Enter Your First Name">
-		</div>
-		<br>
-		<div>
-			<label>Last Name</label>
-			<input type="text" name="lastName" size="25" placeholder="Enter Your Last Name">
-		</div>
-		<br>
-		<div>
-			<label>Email</label>
-			<input type="email" name="email">
-		</div>
-		<br>
-		<div>
-			<label for="message">Message</label>
-			<!-- simple comment: -->
-			<textarea id="message" name="message" rows="30" cols="50"></textarea>
-		</div>
-		<br>
-		<div>
-			<label>Gender</label>
-			<select name="gender" id="">
-				<option value="male">Male</option>
-				<option value="female">Female</option>
-				<option value="other">Other</option>
-			</select>
-		</div>
-		<br>
-		<div>
-			<label>Age:</label>
-			<input type="number" name="age" value="30" min="0" max="100">
-		</div>
-		<br>
-		<div>
-			<label>Birthday:</label>
-			<input type="date" name="birthday">
-		</div>
-		<br>
-		Yes:
-		<input type="radio" name="yesorno" value="y">
-		No:
-		<input type="radio" name="yesorno" value="n">
+				<!-- Legend -->
+				<legend>Personal information's</legend>
+			<div>
+				<!-- lable -->
+				<label for="firstname">First Name</label>
+				<!-- textfeild -->
+				<input type="text" id="firstname" name="firstName" size="25" placeholder="Enter Your First Name">
+			</div>
+			<br>
+			<div>
+				<label>Last Name</label>
+				<input type="text" name="lastName" size="25" placeholder="Enter Your Last Name">
+			</div>
+			<br>
+			<div>
+				<label>Email</label>
+				<input type="email" name="email">
+			</div>
+			<br>
+			<div>
+				<label for="message">Message</label>
+				<!-- textarea -->
+				<textarea id="message" name="message" rows="30" cols="50"></textarea>
+			</div>
+			<br>
+			<div>
+				<!-- dropdown list -->
+				<label>Gender</label>
+				<select name="gender" id="">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<!-- number -->
+				<label>Age:</label>
+				<input type="number" name="age" value="30" min="0" max="100">
+			</div>
+			<br>
+			<div>
+				<!-- date tag -->
+				<label>Birthday:</label>
+				<input type="date" name="birthday">
+			</div>
+			<br>
 
-		<br>
-		<br>
+			<!-- radio button -->
+			Yes:
+			<input type="radio" name="yesorno" value="y">
+			No:
+			<input type="radio" name="yesorno" value="n">
 
-		Which item are you interested in?<br>
-		<input type="checkbox" name="apple" checked="checked" id=""> Apple<br>
-		<input type="checkbox" name="orange" id=""> Orange<br>
-		<input type="checkbox" name="banana" id=""> Banana<br>
-		<input type="checkbox" name="lemon" id=""> Lemon<br>
+			<br>
+			<br>
+			
+			<!-- checkbox -->
+			Which item are you interested in?<br>
+			<input type="checkbox" name="apple" checked="checked" id=""> Apple<br>
+			<input type="checkbox" name="orange" id=""> Orange<br>
+			<input type="checkbox" name="banana" id=""> Banana<br>
+			<input type="checkbox" name="lemon" id=""> Lemon<br>
 
-		<br>
-		<br>
+			<br>
+			<br>
 
-
-		<input type="submit" name="submit" value="Submit">
+			<!-- submit -->
+			<input type="submit" name="submit" value="Submit">
+		</fieldset>
 	</form>
-</fieldset>
+
+
+
+
 
 	<br>
-
+	<!-- A single button -->
 	<button click="someFunction">Click Me</button>
 
 	<br>
 	<hr>
 	<br>
+
 	<!-- Images -->
 	<a href="images/gandalf.jpg">
 		<img src="images/gandalf.jpg" title="Gandalf" alt="Gandalf" width="300" height="100">
@@ -165,7 +180,8 @@
 	<br>
 	<hr>
 	<br>
-	<iframe width="200" height="200" src="blog.html" frameborder="1" name="myiframe" id="myiframe">
+	<!-- Iframe -->
+	<iframe width="200" height="200" src="blog.html" frameborder="1" name="myiframe">
 		Do you see this?
 	</iframe> <br>
 	<a href="https://www.varzesh3.com" target="myiframe">Check Google.com</a>
@@ -173,15 +189,20 @@
 	<br>
 	<br>
 	<br>
+	<!-- An audio tag -->
 	<audio controls="audiocontrols" src="sounds/Don't-Wanna-MissA-Thing.mp3">
 		<!-- <source src="sounds/Don't-Wanna-MissA-Thing.mp3"> -->
+		Audio
 	</audio>
 
 	<br>
 	<br>
 	<br>
-
-	<video src=""></video>
+	
+	<!-- A video tag -->
+	<video controls="videocontrols" src="videos/Game-of-Thrones-HBO.mp4" width="300" height="300">
+		Video
+	</video>
 
 	<br>
 	<br>
@@ -202,6 +223,7 @@
 	<br>
 
 	<p>
+		<!-- An abbreviation tag -->
 		This is the <abbr title="United States of America">USA</abbr> Military
 	</p>
 
@@ -211,6 +233,7 @@
 
 
 	<p>
+		<!-- A citation tag -->
 		This is <cite>HTML Full Course</cite> by Ali Darvishi
 	</p>
 
