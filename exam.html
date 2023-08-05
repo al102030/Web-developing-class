@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <meta name="description" content="A web site by Ali Darvishi">
+    <meta name="keywords" content="HTML, crash Course, Ali Darvishi">
+    <meta http-equiv="author" content="Ali Darvishi">
+    <meta http-equiv="content-language" content="en-us">
+    <meta charset="UTF-8">
+    <style type="text/css">
+        #main-header{
+            background-color: black;
+            color: lime;
+            text-align: center;
+            padding: 10px;
+        }
+        #main-footer{
+            text-align: center;
+            background-color: aquamarine;
+            color: black;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>My Website</h1>
+    </header>
+    <a href="index.html">Go to Index</a>
+    <main>
+        <section>
+            <article>
+                <h3>Post One</h3>
+                <small>By Ali</small>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis veritatis nisi libero magni molestias suscipit voluptatibus molestiae, placeat nihil in quibusdam inventore nostrum ex, ab praesentium. Minima, blanditiis minus.
+                </p>
+                <a href="post.html">Read More</a>
+            </article>
+            <article>
+                <h3>Post Two</h3>
+                <small>By Sarah</small>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis veritatis nisi libero magni molestias suscipit voluptatibus molestiae, placeat nihil in quibusdam inventore nostrum ex, ab praesentium. Minima, blanditiis minus.
+                </p>
+                <a href="post.html">Read More</a>
+            </article>
+            <article>
+                <h3>Post Three</h3>
+                <small>By Borna</small>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis veritatis nisi libero magni molestias suscipit voluptatibus molestiae, placeat nihil in quibusdam inventore nostrum ex, ab praesentium. Minima, blanditiis minus.
+                </p>
+                <a href="post.html">Read More</a>
+            </article>
+        </section>
+        <section>
+            <!-- Another section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <form action="post.py" method="GET">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Please Enter Your Full Name" size="25"><br><br>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Please Enter Your Full Email" size="25">
+                    <br>
+                    <br>
+                    <label for="message">About You</label><br>
+                    <textarea name="message" id="message" cols="100" rows="30"></textarea> <br><br>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="y">Yes</label>
+                    <input type="radio" name="yesorno" id="y">
+                    <label for="n">No</label>
+                    <input type="radio" name="yesorno" id="n">
+                    <br>
+                    <br>
+                    <input type="date" name="birthday">
+                    <br>
+                    <br>
+                    <div>
+                        <input type="submit" name="submit" value="OK">
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <aside>
+        <h3>Categories</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <footer id="main-footer">
+        Copyright &copy; 2023 By Ali Darvishi 
+    </footer>
+    
+</body>
+</html>
