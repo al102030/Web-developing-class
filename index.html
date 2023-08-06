@@ -1,254 +1,37 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>
-		HTML5 Cheat Sheet
-	</title>
+	<title>My Website</title>
+	<style>
+		h1, h3{
+			background-color:aquamarine;
+			color: lightgreen;
+			text-align: center;
+			border: 1px solid black;
+		}
+		p{
+			color: red;
+			font-size: 25px;
+			font-family:'Courier New', Courier, monospace;
+		}
+	</style>
 </head>
-
 <body>
-	<a href="blog.html">Go to Blog</a>
-
-	<!-- Headings -->
-	<h1>Heading one</h1>
-	<h2>Heading two</h2>
-	<h3>Heading three</h3>
-	<h4>Heading four</h4>
-	<h5>Heading five</h5>
-	<h6>Heading six</h6>
-	<!-- Paragraph -->
+	<h1>The CSS Test Site</h1>
+	<br>
 	<p>
-		Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation <em>ullamco laboris nisi ut aliquip</em> ex ea commodo
-		consequat. <b>Duis aute</b> irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla <a href="https://google.com" target="_blank">pariatur</a>. Excepteur sint occaecat
-		cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eum. 
+		Repudiandae consequatur sit animi pariatur eligendi? Voluptates ad, placeat 
+		voluptatibus laborum rerum recusandae vitae reiciendis fugit exercitationem odit inventore eaque.
 	</p>
+	<br>
+	<h3>It's another heading</h3>
+	<br>
 	<p>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit.
-		Tempore, quaerat ex dolore rem dicta ducimus provident laborum,
-		tempora minima obcaecati laudantium iste natus? Distinctio, dicta.
-		Voluptatem officiis recusandae in cupiditate!
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+		Quia, officiis numquam. Dolore expedita quaerat nesciunt facere quia perferendis. 
+		Quis ut itaque quae quod vitae fuga minus voluptates eum commodi quos.
 	</p>
-
-	<!-- Lists -->
-	<ul>
-		<li>List Item 1</li>
-		<li>List Item 2</li>
-		<li>List Item 3</li>
-		<li>List Item 4</li>
-		<li>List Item 5</li>
-	</ul>
-	<ol>
-		<li>List Item 1</li>
-		<li>List Item 2</li>
-		<li>List Item 3</li>
-		<li>List Item 4</li>
-		<li>List Item 5</li>
-	</ol>
-
-	<!-- Tables -->
-	<table>
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>Email</th>
-				<th>Age</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Ali</td>
-				<td>ali@gmail.com</td>
-				<td>38</td>
-			</tr>
-			<tr>
-				<td>Sara</td>
-				<td>Sara@gmail.com</td>
-				<td>30</td>
-			</tr>
-			<tr>
-				<td>Jack</td>
-				<td>Jack@gmail.com</td>
-				<td>34</td>
-			</tr>
-		</tbody>
-	</table>
-
-
-	<br>
-	<hr>
-	<br>
-
-
-	<!-- Filedset -->
-	<fieldset>
-		<!-- Legend -->
-		<legend>Personal information's</legend>
-		<!-- Forms -->
-		<form action="about.py" method="POST">
-			<div>
-				<!-- lable -->
-				<label for="firstname">First Name</label>
-				<!-- textfeild -->
-				<input type="text" id="firstname" name="firstName" size="25" placeholder="Enter Your First Name">
-			</div>
-			<br>
-			<div>
-				<label>Last Name</label>
-				<input type="text" name="lastName" size="25" placeholder="Enter Your Last Name">
-			</div>
-			<br>
-			<div>
-				<label>Email</label>
-				<input type="email" name="email">
-			</div>
-			<br>
-			<div>
-				<label for="message">Message</label>
-				<!-- textarea -->
-				<textarea id="message" name="message" rows="30" cols="50"></textarea>
-			</div>
-			<br>
-			<div>
-				<!-- dropdown list -->
-				<label>Gender</label>
-				<select name="gender" id="">
-					<option value="male">Male</option>
-					<option value="female">Female</option>
-					<option value="other">Other</option>
-				</select>
-			</div>
-			<br>
-			<div>
-				<!-- number -->
-				<label>Age:</label>
-				<input type="number" name="age" value="30" min="0" max="100">
-			</div>
-			<br>
-			<div>
-				<!-- date tag -->
-				<label>Birthday:</label>
-				<input type="date" name="birthday">
-			</div>
-			<br>
-
-			<!-- radio button -->
-			Yes:
-			<input type="radio" name="yesorno" value="y">
-			No:
-			<input type="radio" name="yesorno" value="n">
-
-			<br>
-			<br>
-			
-			<!-- checkbox -->
-			Which item are you interested in?<br>
-			<input type="checkbox" name="apple" checked="checked" id=""> Apple<br>
-			<input type="checkbox" name="orange" id=""> Orange<br>
-			<input type="checkbox" name="banana" id=""> Banana<br>
-			<input type="checkbox" name="lemon" id=""> Lemon<br>
-
-			<br>
-			<br>
-
-			<!-- submit -->
-			<input type="submit" name="submit" value="Submit">
-		</form>
-	</fieldset>
-
-
-
-
-
-	<br>
-	<!-- A single button -->
-	<button click="someFunction">Click Me</button>
-
-	<br>
-	<hr>
-	<br>
-
-	<!-- Images -->
-	<a href="images/gandalf.jpg">
-		<img src="images/gandalf.jpg" title="Gandalf" alt="Gandalf" width="300" height="100">
-	</a>
 	
-	<br>
-	<hr>
-	<br>
-	<!-- Iframe -->
-	<iframe width="200" height="200" src="blog.html" frameborder="1" name="myiframe">
-		Do you see this?
-	</iframe> <br>
-	<a href="https://www.varzesh3.com" target="myiframe">Check Google.com</a>
-
-	<br>
-	<br>
-	<br>
-	<!-- An audio tag -->
-	<audio controls="audiocontrols" src="sounds/Don't-Wanna-MissA-Thing.mp3">
-		<!-- <source src="sounds/Don't-Wanna-MissA-Thing.mp3"> -->
-		Audio
-	</audio>
-
-	<br>
-	<br>
-	<br>
-
-	<!-- A video tag -->
-	<video controls="videocontrols" src="videos/Game-of-Thrones-HBO.mp4" width="300" height="300">
-		Video
-	</video>
-
-	<br>
-	<br>
-	<br>
-	<hr>
-	<br>
-
-
-	<!-- Quotations -->
-	<blockquote cite="https://www.youtube.com">
-		Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-		Quidem beatae culpa nulla ut quasi alias suscipit esse repudiandae expedita illum 
-		quo ea assumenda porro doloribus odit, asperiores, maxime sapiente cum!
-	</blockquote>
-
-	<br>
-	<hr>
-	<br>
-
-	<p>
-		<!-- An abbreviation tag -->
-		This is the <abbr title="United States of America">USA</abbr> Military
-	</p>
-
-	<br>
-	<hr>
-	<br>
-
-
-	<p>
-		<!-- A citation tag -->
-		This is <cite>HTML Full Course</cite> by Ali Darvishi
-	</p>
-
-	<!-- Escape Characters -->
-	&nbsp;
-	&#8482;
-	&amp;
-	&it;
-	&gt;
-	&#63;
-	&copy;
-	<sup>ok</sup>
-	<sub>ok</sub>
-
-	<div style="margin-top:500px"></div>
 </body>
-
 </html>
