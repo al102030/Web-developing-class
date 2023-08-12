@@ -1,7 +1,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    background-color: #f7c0f7;
+    background-color: #f9f6cf;
     font-size: 25px;
 }
 h1, h2{
@@ -74,4 +74,8 @@ p.green{
     color: rgb(240, 66, 130);
     font-size: 10px;
     text-align: left;
+}
+
+.highlight{
+    background-color: yellow;
 }
