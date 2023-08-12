@@ -1,6 +1,8 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    background-color: #FF64FF;
+    font-size: 25px;
 }
 h1, h2{
     background-color: aqua;
@@ -14,14 +16,14 @@ h1{
 }
 .blue{
     color:blue;
-    font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 p.green{
     color:green;
-    font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .underline{
     text-decoration: underline;
+}
+.font-sizes{
 }
