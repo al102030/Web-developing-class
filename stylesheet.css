@@ -14,6 +14,23 @@ h1, h2{
 h1{
     color: purple;
 }
+.h1-absolute{
+    background-color: blue;
+    border: solid 3px dashed;
+    position: fixed;
+
+    top: 90px;
+    left: 825px;
+}
+.h1-fixed{
+    background-color: blue;
+    border: solid 3px dashed;
+    position: absolute;
+
+    top: 90px;
+    left: 825px;
+}
+
 .blue{
     color:blue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -78,4 +95,113 @@ p.green{
 
 .highlight{
     background-color: yellow;
+}
+
+/* ============================== */
+a:link{
+    color: blue;
+}
+a:visited{
+    color: #8c8c9d;
+}
+a:hover{
+    cursor:crosshair;
+    color: #f15a51;
+}
+
+.second-h1{
+    background-color: #f15a51;
+    border: black 3px solid;
+    padding: 20px;
+    margin: 25px;
+}
+
+.second-p1{
+    background-color: #f15a51;
+    border: black 3px solid;
+    padding: 20px;
+    margin: 25px;
+    text-align: justify;
+}
+
+.second-p2{
+    background-color: #adf868;
+    border: black 3px solid;
+    padding: 20px;
+    margin: 25px;
+    height: 100px;
+    cursor:url(images/mail.ico), default;
+}
+.second-span{
+    background-color: chartreuse;
+    border: black 3px solid;
+    padding: 20px;
+    margin: 25px;
+}
+
+.second-image{
+    border: black 3px solid;
+    float: left;
+    padding: 5px;
+    margin: 20px;
+    /* margin-bottom: 300px; */
+}
+
+.second-div{
+    background-color:aqua;
+    border: black 3px solid;
+    padding: 20px;
+    margin: 25px;
+}
+
+.second-div1{
+    background-color:violet;
+    border: black 3px solid;
+    width: 300px;
+    float: left;
+    padding: 20px;
+    margin: 25px;
+}
+.second-div2{
+    background-color:violet;
+    border: black 3px solid;
+    width: 300px;
+    float: right;
+    padding: 20px;
+    margin: 25px;
+}
+
+/*Relatives==========================*/
+
+#main1{
+    border: 1px dotted black;
+    background-color: #e5e4d7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#par{
+    color: red;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+#main2{
+    border: 1px dotted black;
+    background-color: #e5e4d7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+#square{
+    height:25px;
+    width: 25px;
+    background-color: red;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
