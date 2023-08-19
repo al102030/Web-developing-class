@@ -1,8 +1,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
     background-color: #f9f6cf;
-    font-size: 25px;
+    font-size: 20px;
 }
 h1, h2{
     background-color: aqua;
@@ -130,6 +129,7 @@ a:hover{
     padding: 20px;
     margin: 25px;
     height: 100px;
+    overflow: scroll;
     cursor:url(images/mail.ico), default;
 }
 .second-span{
@@ -140,8 +140,8 @@ a:hover{
 }
 
 .second-image{
+    background-color: #adf868;
     border: black 3px solid;
-    float: left;
     padding: 5px;
     margin: 20px;
     /* margin-bottom: 300px; */
@@ -170,6 +170,8 @@ a:hover{
     padding: 20px;
     margin: 25px;
 }
+
+
 
 /*Relatives==========================*/
 

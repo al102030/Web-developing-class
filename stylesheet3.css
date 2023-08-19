@@ -1,0 +1,107 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f9f6cf;
+    font-size: 20px;
+    margin: 0;
+}
+
+#theForm{
+    color: white;
+    display: table;
+    padding: 15px;
+    background-color: #2c8f77;
+    border: solid black 2px;
+}
+
+.row{
+    display: table-row;
+}
+
+.row label{
+    display: table-cell;
+    padding: 2px;
+    /* text-align: right; */
+}
+
+.row input{
+    display: table-cell;
+    padding: 2px;
+}
+
+/* Strategies */
+
+#left{
+    margin: 15px;
+    padding: 10px;
+    border: solid green 2px;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+
+#center{
+    margin: 15px;
+    padding: 10px;
+    border: solid green 2px;
+    border-radius: 5px;
+    background-color: bisque;
+}
+
+#right{
+    margin: 15px;
+    padding: 10px;
+    border: solid green 2px;
+    border-radius: 5px;
+    background-color: cadetblue;
+}
+
+#left, #center, #right{
+    width: 100px;
+}
+
+#left, #center, #right{
+    width: 300px;
+}
+
+#nth{
+    border: blue dashed 2px;
+    background-color: aquamarine;
+    margin: 20px;
+    padding: 30px;
+}
+
+
+#nth p:nth-child(even){
+    background-color: orangered;
+}
+
+p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p:first-line{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Opacity property*/
+
+#box1{
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+    background-color: blue;
+}
+
+#box2{
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+    background-color: blue;
+    opacity: 0.4;
+}
+
+#box2:hover{
+    opacity: 1.0;
+}
