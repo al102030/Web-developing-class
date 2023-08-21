@@ -1,0 +1,84 @@
+/* Type selector */
+h1{
+    /* color: blue; */
+}
+
+/* Id selector */
+#para1{
+    /* color: green; */
+}
+
+/* Class selector */
+.para{
+    /* color: orange; */
+}
+
+/* Combined selector */
+
+h2, h3, #para1{
+    /* text-decoration: underline; */
+}
+
+/* The descendant selector */
+div p{
+    /* font-style: italic; */
+}
+
+/* The child selector */
+blockquote.test>p{
+    /* color: crimson; */
+}
+
+/* Sibling selector */
+div h2+p{
+    /* color: blueviolet; */
+}
+
+div h2~p{
+    /* color:chartreuse; */
+}
+
+
+/* Wildcard selector */
+* {
+    /* text-decoration: underline; */
+}
+
+/* Attribute selector */
+
+/*   ^ $ *    */
+
+p[lang^="fr"]{
+    /* background-color: cornflowerblue; */
+}
+
+/* nth Selectors */
+#nth{
+    /* border: blue dashed 2px; */
+    /* background-color: aquamarine; */
+    /* margin: 20px; */
+    /* padding: 30px; */
+}
+
+/* even odd 3 3n 2n+4 */
+#nth p:nth-child(even){
+    /* background-color: orangered; */
+}
+
+/* Not selector (work on selectors) */
+:not(#para1){
+    /* color: aqua; */
+
+}
+
+/* First character selector */
+p::first-letter{
+    /* font-size: 30px; */
+    /* font-weight: bold; */
+}
+
+/* First line selector */
+p:first-line{
+    /* color: red; */
+    /* font-family: 'Courier New', Courier, monospace; */
+}

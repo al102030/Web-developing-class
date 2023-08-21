@@ -1,0 +1,124 @@
+.container-grid{
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-rows: 100px 100px 100px 100px 100px; */
+    /* grid-gap:10px; */
+    /* grid-auto-rows: 100px; */
+    /* grid-template-columns: repeat(5, 1fr); */
+}
+
+.nestedgrid{
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-gap:10px; */
+    /* grid-auto-rows: 150px; */
+    /* padding: 10px; */
+}
+
+p{
+    /* border: 2px solid white; */
+}
+
+img{
+    /* border: 2px solid white; */
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.section1{
+    /* grid-column: 1; */
+    /* grid-row: 1; */
+    /* background-color: blue; */
+    /* color: white; */
+    /* text-align: center; */
+    /* font-size: 20px; */
+}
+.section2{
+    /* grid-column: 2;
+    grid-row: 1;
+    background-color:darkgreen;
+    color: white;
+    text-align: center;
+    font-size: 20px; */
+}
+.section3{
+    /* grid-column: 3;
+    grid-row: 1;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    font-size: 20px; */
+}
+.section4{
+    /* grid-column: 1;
+    grid-row: 2;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 20px; */
+}
+.section5{
+    /* grid-column: 2;
+    grid-row: 2;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-size: 20px; */
+}
+.section6{
+    /* grid-column: 3;
+    grid-row: 2;
+    background-color: yellow;
+    color: white;
+    text-align: center;
+    font-size: 20px; */
+}
+.section7{
+    /* grid-column: 1;
+    grid-row: 3;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px; */
+}
+.section8{
+    /* grid-column: 2;
+    grid-row: 3;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    font-size: 20px; */
+}
+.section9{
+    /* grid-column: 3;
+    grid-row: 3;
+    background-color: violet;
+    color: white;
+    text-align: center;
+    font-size: 20px; */
+}
+.section10{
+    /* grid-column: 1 / 4; */
+    /* grid-row: 4 / 6; */
+    /* background-color: orangered; */
+    /* color: white; */
+    /* text-align: center; */
+    /* font-size: 20px; */
+}
+.section11{
+    /* grid-column: 1 / 4;
+    grid-row: 6 / 8;
+    background-color: rgb(238, 255, 0);
+    color: white;
+    text-align: center;
+    font-size: 20px; */
+}
+
+.section12{
+    /* grid-column: 4 / 6;
+    grid-row: 1 / 8;
+    background-color: rgb(255, 1, 73);
+    color: white;
+    text-align: center;
+    font-size: 20px; */
+}

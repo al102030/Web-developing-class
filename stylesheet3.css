@@ -62,26 +62,6 @@ body{
     width: 300px;
 }
 
-#nth{
-    border: blue dashed 2px;
-    background-color: aquamarine;
-    margin: 20px;
-    padding: 30px;
-}
-
-
-#nth p:nth-child(even){
-    background-color: orangered;
-}
-
-p::first-letter{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-p:first-line{
-    font-family: 'Courier New', Courier, monospace;
-}
 
 /* Opacity property*/
 
@@ -99,9 +79,46 @@ p:first-line{
     padding: 15px;
     margin: 10px;
     background-color: blue;
-    opacity: 0.4;
+    /* opacity: 0.4; */
 }
 
 #box2:hover{
-    opacity: 1.0;
+    /* opacity: 1.0; */
+}
+
+/* linear Gradient */
+#box3{
+    width: 800px;
+    height: 300px;
+    float: left;
+    background: blue;
+
+    /* 30deg */
+    /* background: linear-gradient( to top right, blue 50%, yellow 50%); */
+
+    /* background: linear-gradient(to right, rgba(255,0,0,0.3), rgba(0,0,255,1.0)); */
+}
+
+/* Text shadow */
+#text1{
+    text-align: center;
+    font: bold 60px helvetica;
+    /* text-shadow: 3px 3px 5px orange,
+                 6px 6px 10px blue; */
+}
+
+#text2{
+    text-align: center;
+    font: bold 60px helvetica;
+    /* text-shadow: 6px 6px 10px rgba(0, 0, 255, 0.7); */
+}
+
+/* Box shadow */
+#box4{
+    width: 800px;
+    height: 300px;
+    float: left;
+    background: yellowgreen;
+    /* box-shadow: 15px 15px 5px 30px  blue; */
+    /* box-shadow: inset 0 0 15px black; */
 }

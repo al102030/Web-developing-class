@@ -1,0 +1,79 @@
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* align-items: flex-end; */
+    /* flex-end flex-start space-between center space-evenly */
+
+    /* flex-wrap: nowrap; */
+    /* use justify-content with it */
+}
+
+.box1{
+    background-color: darkgreen;
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    /* flex-grow: 1; */
+    /* align-items: flex-start; */
+    /* flex-shrink: 2; */
+    flex-basis: 400px;
+}
+
+.box2{
+    background-color: rgb(70, 3, 214);
+    text-align: center;
+    color: white;
+    width: 100px; /* use % for shrink*/
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    /* flex-grow: 1; */
+}
+
+.box3{
+    background-color: rgb(226, 1, 114);
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    /* order: -1000; */
+    /* flex-grow: 1; */
+}
+
+.box4{
+    background-color: rgb(253, 174, 2);
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    /* order: -1; */
+    /* flex-grow: 2; */
+}
+
+.box5{
+    background-color: rgb(59, 229, 255);
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.box6{
+    background-color: rgb(144, 253, 2);
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+}
