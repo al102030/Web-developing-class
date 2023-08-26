@@ -1,0 +1,32 @@
+body{
+    background-color:rgb(248, 203, 143);
+    border-radius: 25px;
+    border: 1px dotted black;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.h1{
+     background: linear-gradient( to right, rgb(250, 105, 40), rgb(255, 0, 1));
+     text-align: center;
+     color: rgb(0, 0, 0);
+     border: 3px solid black ;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     margin: 20px;
+     padding: 20px;
+}
+.div{
+    background: linear-gradient(to right, rgb(46, 255, 46), rgb(93, 93, 252));
+}
+
+.fieldset{
+    border: dotted 2px;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-gap: 10px;
+}
