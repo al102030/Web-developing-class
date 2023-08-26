@@ -1,9 +1,9 @@
 .flexcontainer{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    /* justify-content:flex-start; */
     /* align-items: flex-end; */
-    /* flex-end flex-start space-between center space-evenly */
+    /* ====flex-end flex-start space-between center space-evenly ===*/
 
     /* flex-wrap: nowrap; */
     /* use justify-content with it */
@@ -18,9 +18,9 @@
     margin: 10px;
     padding: 5px;
     /* flex-grow: 1; */
-    /* align-items: flex-start; */
+    /* align-self: flex-start; */
     /* flex-shrink: 2; */
-    flex-basis: 400px;
+    /* flex-basis: 400px; */
 }
 
 .box2{

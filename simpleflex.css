@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.lbox{
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    flex-grow: 1;
+    border-radius: 5px;
+    border: 2px white solid;
+}
+
+.sbox{
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px white solid;
+}
+
+
+.linebreak{
+    background-color: darkgray;
+    height: 2px;
+    flex-basis: 100%;
+}
