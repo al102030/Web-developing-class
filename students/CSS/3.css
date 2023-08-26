@@ -1,0 +1,28 @@
+body{
+    background-color:darkgrey ;
+    border: black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+h1{
+    background: linear-gradient(to top right rgb(255, 155, 275), );
+    color: azure;
+    font: bold;
+    font-size:xx-large;
+    padding: 10px;
+    margin: 5px ;
+}
+.container{
+    display:grid
+}
+.legend{
+    font-size: x-large;
+    color: black;
+}
+.para{
+    background-color: cornflowerblue;
+    color: black;
+    border: ;
+
+}
