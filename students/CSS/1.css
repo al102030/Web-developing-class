@@ -1,1 +1,21 @@
+body{
+    background-color: rgb(129, 202, 32);
+}
 
+h1{
+    
+}
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imageintext-div{
+    text-align: center;
+    color: rgb(38, 115, 148);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 2px rgb(118, 12, 12) solid;
+}
