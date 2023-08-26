@@ -1,1 +1,31 @@
+body{
+    background-color: cadetblue;
+    margin: 40px;
+    padding: 40px;
+    border: 2px dotted saddlebrown;
+    border-radius: 10;
+
+}
+.leg{
+    background: linear-gradient(to top right, rgb(248, 0, 0), rgb(60, 0, 201) );
+    color: chartreuse;
+    border: 3px solid red;
+    margin: 10px;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+.set1{
+    background-color: chocolate;
+  
+   margin: 5px;
+   padding: 5px;
+
+}
+.field1{
+    border: 2px dotted red;
+    border-radius: 10px;
+    scroll:
+}
 
