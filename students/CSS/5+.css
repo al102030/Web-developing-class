@@ -1,0 +1,45 @@
+h1{
+   
+    border: rgb(11, 236, 11);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+    font-weight: 225px;
+    background: linear-gradient(to top right ,blue , pink )
+
+}
+.container{
+         display:grid;
+
+}
+.box{
+     
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(248, 11, 228) ;
+
+}
+legend{
+       font-style: italic;
+       font-size: 25px ;
+       color: rgb(57, 4, 92);
+
+
+
+
+}
+
+fieldset{
+      border: black 2px solid;
+      background-color: rgb(243, 226, 235);
+      border-style: dotted ;
+}
+#f{
+    
+    display:table ;
+    
+
+
+
+
+}
