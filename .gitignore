@@ -7,11 +7,11 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-1.css
-1.html
 .Python
 # ex.css
 # ex.html
+1.css
+1.html
 noex.css
 noex.html
 .DS_Store
