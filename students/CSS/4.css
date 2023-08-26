@@ -1,1 +1,21 @@
+body{
+    background-color: rgb(236, 228, 238);
+    border: dotted 2px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
 
+    
+}
+.continer-grid{
+    display:grid ;
+}
+.continer-grid{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border:dotted;
+    border-radius: 10px 10px 0 0 ;
+    background: linear-gradient(to top right rgb blue  red);
+
+}
