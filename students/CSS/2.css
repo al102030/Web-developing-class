@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+    background-color:bisque;
     border: 2px dotted black;
     border-radius: 15px;
     margin: 20px;
@@ -8,19 +8,24 @@ body {
 
 .my {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
     text-align: center;
     padding: 20px;
+    margin-bottom: 30px;
     border: 5px solid blue;
     align-items: center;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    color: rgb(255, 117, 175);
-    background: linear-gradient(to top right, rgb(255, 0, 0), rgb(85, 74, 247)) ;
-}
-.fldset1 {
-    display: grid;
+    color: rgb(250, 22, 117);
+    background: linear-gradient(to top right,yellow 5%, plum 25%, yellowgreen 80%) ;
 }
 
+.fldset1 {
+    display: grid;
+    grid-template-columns: 900px;
+    justify-content: end;
+    margin-bottom: 40px;
+}
 
 .fldset1 fieldset{
     border-style: dashed;
@@ -28,21 +33,33 @@ body {
     border-radius: 10px;
     overflow: scroll;
     height: 200px;
-    background-color: rgb(0, 255, 170);
+    background-color: rgb(0, 255, 136);
     cursor:col-resize;
 }
 .fldset1 legend {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
+
+
+.fldset2 {
+    display: grid;
+    grid-template-columns: 900px;
+    justify-content: end;
+}
+
 .fldset2 fieldset{
     border-style: dashed;
     border-color: black;
     border-radius: 10px;
-    
-    background-color: rgb(162, 185, 247);
+    padding-bottom: 80px;
+    padding-top: 60px;
+    background-color: aqua;
 }
 .fldset2 ul li a {
+    cursor: cell;
+    font-size: 25px;
     color: red;
 }
 .fldset2 ul li a.apple {
@@ -53,14 +70,57 @@ body {
     font-weight: bold;
 }
 
+
+
+.fldset3 {
+    display: grid;
+    grid-template-columns: 880px;
+    margin-top: -505.5px;
+    
+    
+}
+
 .fldset3 fieldset{
+    padding-right: 500px;
+    border-style: dashed;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;  
+    background-color: #a2b9f7;
+}
+.fldset3 legend {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.personalForm {
     display: table;
     padding: 40px;
-    border-style: dashed;
-    border-color: black;
-    border-radius: 10px;  
-    background-color: rgb(0, 255, 170);
 }
-.row {
-    display: table;
+.row label{
+    color: black;
+    display: table-row;
+}
+.row input{
+    display: table-row;
+}
+
+#save_btn input{
+    padding-right: 8px;
+    padding-bottom: 3px;
+    box-shadow: 0 0 5px pink;
+    background-color: white;
+    border-color: pink;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: system-ui;
+    transition: 0.2s;
+}
+#save_btn input:hover {
+    box-shadow: 0 0 50px pink;
+    cursor: pointer;
+    background-color: pink;
+    color: white;
+    transform: scale(1.5);
+    transition: 0.2s;
 }
