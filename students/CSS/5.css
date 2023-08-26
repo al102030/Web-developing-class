@@ -1,0 +1,42 @@
+body{
+    background-color: darkcyan;
+}
+
+
+
+h1{
+    border: blue 5px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    font-weight: 200px;
+    background: linear-gradient(to top right , blue , yellow);
+
+}
+.container{
+    display: grid;
+    
+}
+
+legend{
+    font-style: italic;
+    font-size: 25px;
+    color: red;
+    
+}
+
+fieldset{
+    border: black 2px solid;
+    background-color: aqua;
+    border-style:dotted
+    
+}
+
+a:hover{
+    color: red;
+}
+
+#f{
+    display: table;
+    display: table-cell;
+}
