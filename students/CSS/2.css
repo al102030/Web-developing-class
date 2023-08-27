@@ -17,39 +17,66 @@ body {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     color: rgb(250, 22, 117);
-    background: linear-gradient(to top right,yellow 5%, plum 25%, yellowgreen 80%) ;
+    background: linear-gradient(to top right,rgb(85, 255, 136) 5%, rgb(255, 100, 221) 85%) ;
 }
 
-.fldset1 {
+/* ----Grid Section---- */
+
+/*
+Section1 = Personal Information
+Section2 = About
+Section3 = Website
+*/
+.container {
     display: grid;
-    grid-template-columns: 900px;
-    justify-content: end;
-    margin-bottom: 40px;
+    gap:30px;
+    grid-template-columns: repeat(2, 25%);
+}
+.container .section1 {
+    display: grid;
+    
+}
+.container .section2 fieldset{
+    display: grid;
+    padding-top: -100px;
 }
 
-.fldset1 fieldset{
+.section1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+}
+
+
+.section2{
+    grid-column: 3 / 3;
+    grid-row: 1 ;
+}
+
+
+.section3 {
+    grid-column: 3;
+    grid-row: span 2;
+}
+
+
+/* ----Style Section---- */
+.section2 fieldset{
     border-style: dashed;
     border-color: black;
     border-radius: 10px;
     overflow: scroll;
     height: 200px;
-    background-color: rgb(0, 255, 136);
+    background-color: rgb(168, 250, 113);
     cursor:col-resize;
 }
-.fldset1 legend {
+.section2 legend {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 25px;
 }
 
 
-
-.fldset2 {
-    display: grid;
-    grid-template-columns: 900px;
-    justify-content: end;
-}
-
-.fldset2 fieldset{
+.section3 fieldset{
     border-style: dashed;
     border-color: black;
     border-radius: 10px;
@@ -57,52 +84,55 @@ body {
     padding-top: 60px;
     background-color: aqua;
 }
-.fldset2 ul li a {
+.section3 ul li a {
     cursor: cell;
     font-size: 25px;
     color: red;
 }
-.fldset2 ul li a.apple {
+.section3 ul li a.apple {
     color: blue;
 }
-.fldset2 legend {
+.section3 legend {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 25px;
 }
 
-
-
-.fldset3 {
+.section1 fieldset{
     display: grid;
-    grid-template-columns: 880px;
-    margin-top: -505.5px;
-    
-    
-}
-
-.fldset3 fieldset{
-    padding-right: 500px;
+    text-align: start;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-style: dashed;
     border-color: rgb(0, 0, 0);
     border-radius: 10px;  
     background-color: #a2b9f7;
 }
-.fldset3 legend {
+.section1 legend {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: black;
+    font-size: 25px;
 }
 
-.personalForm {
+/* ----Form Section---- */
+.personalForm{
     display: table;
-    padding: 40px;
+}
+form{
+    margin-left: 50px;
 }
 .row label{
-    color: black;
-    display: table-row;
+    display: table-cell;
 }
 .row input{
-    display: table-row;
+    display: table-cell;
+}
+
+
+
+#save_btn {
+    margin-left: 25px;
 }
 
 #save_btn input{
