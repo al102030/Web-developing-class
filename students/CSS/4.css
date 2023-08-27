@@ -1,21 +1,89 @@
 body{
-    background-color: rgb(236, 228, 238);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(235, 214, 241);
     border: dotted 2px;
     margin: 10px;
     padding: 10px;
-    border-radius: 10px;
-
-    
+    border-radius: 10px;    
 }
 .continer-grid{
     display:grid ;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
 }
-.continer-grid{
+.section1{
+    grid-column: 1/6;
+    grid-row: 1;
+    background-color: rgb(37, 186, 37);
     text-align: center;
-    margin: 10px;
-    padding: 10px;
-    border:dotted;
+    border: dashed black 2px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+    border:5px solid blue;
     border-radius: 10px 10px 0 0 ;
-    background: linear-gradient(to top right rgb blue  red);
+    background: linear-gradient(to right, rgba(168, 44, 44, 0.3), rgba(43, 43, 139, 0.3));
+    color: rgb(243, 69, 69);
+    font-size: 25px;
+    cursor:crosshair
 
 }
+
+.section2{
+    display: grid;
+    grid-column: 4;
+    grid-row: 2;
+    background-color: rgb(37, 186, 37);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    overflow: scroll;
+    cursor: all-scroll;
+    justify-content: end;
+    border-radius: 12px;
+    
+}
+.section2 a:hover{
+    font-size: 25px;
+}
+.section3{
+    display: grid;
+    grid-column: 4;
+    grid-row: 4;
+    background-color: rgb(118, 201, 233);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 25px;
+    cursor: pointer;
+    justify-content: end;
+    border-radius: 12px;
+
+}
+.section4{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(130, 144, 225);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 30px;
+    cursor: grab;
+    border-radius: 12px;
+
+}
+#theForm{
+     color: white;
+    display: table;
+    padding: 15px;
+    background-color: #2c8f77;
+    border: solid black 2px;
+}  
+#theform{
+    display: table;
+} 
+
+
+
