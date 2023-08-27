@@ -100,13 +100,17 @@ Section3 = Website
 
 .section1 fieldset{
     display: grid;
-    text-align: start;
+    text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
     border-style: dashed;
     border-color: rgb(0, 0, 0);
     border-radius: 10px;  
     background-color: #a2b9f7;
+}
+
+.section1 form {
+    text-align: center;
 }
 .section1 legend {
     font-family: Arial, Helvetica, sans-serif;
@@ -119,25 +123,22 @@ Section3 = Website
 .personalForm{
     display: table;
 }
-form{
-    margin-left: 50px;
+.row{
+    display: table-row;
 }
 .row label{
     display: table-cell;
+    text-align: right;
 }
 .row input{
     display: table-cell;
+    padding: 2px;
 }
 
 
-/* ----Button Section--- */
-#save_btn {
-    margin-left: 25px;
-}
 
 #save_btn input{
-    padding-right: 8px;
-    padding-bottom: 3px;
+    padding: 6px;
     box-shadow: 0 0 5px pink;
     background-color: white;
     border-color: pink;
