@@ -1,5 +1,8 @@
 body{
-    background-color:bisque
+    border-radius: 15px;
+    background-color:bisque;
+    
+    
 }
 
 
@@ -33,6 +36,7 @@ legend{
 
 fieldset{
     border: black 2px solid;
+    border-radius: 20px;
     background-color:brown;
     border-style:dotted;
     
@@ -65,9 +69,12 @@ a:hover{
 }
 
 .section1{
+
+   
+ 
     grid-column: 3;
     grid-row: 1;
-  
+    
     color: white;
     text-align: center;
     font-size: 20px;
@@ -76,7 +83,6 @@ a:hover{
    
     grid-column: 3;
     grid-row: 3;
- 
     color: white;
     text-align: center;
     font-size: 20px;
@@ -86,7 +92,6 @@ a:hover{
 .section3{
     grid-column: 1;
     grid-row: 1;
-  
     color: white;
     text-align: center;
     font-size: 20px;
@@ -120,6 +125,12 @@ a:hover{
 .paragragh:hover{
     cursor: move;
 }
+
+
+
+
+
+
 
 
 
