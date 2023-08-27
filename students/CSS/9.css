@@ -1,3 +1,8 @@
+/* Very Good!
+Your score (in CSS exam): 100 (of 100)
+You have lost 5 marks on the exam(-5).
+You have achieved 5 marks in class(+5) */
+
 body{
     background-color: pink;
     border: black dotted 2px;
@@ -27,7 +32,7 @@ h1{
     overflow: scroll;
     cursor: move;
     height: 200px;
-    width: 700px;
+    width: 550px;
     margin: 25px;
     padding: 20px;
 }
@@ -42,7 +47,7 @@ h1{
 .c2{
     background-color: aqua;
     height: 100px;
-    width: 700px;
+    width: 550px;
     margin: 25px;
     padding: 20px;
 }
