@@ -1,28 +1,64 @@
 body{
-    background-color:darkgrey ;
-    border: black;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
+    background-color:rgb(207, 207, 207) ;
+    border: 2px dotted black;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
 }
-h1{
-    background: linear-gradient(to top right rgb(255, 155, 275), );
-    color: azure;
-    font: bold;
-    font-size:xx-large;
-    padding: 10px;
-    margin: 5px ;
-}
-.container{
-    display:grid
-}
-.legend{
-    font-size: x-large;
-    color: black;
-}
-.para{
-    background-color: cornflowerblue;
-    color: black;
-    border: ;
 
+.container-grid{ 
+    display:grid
+    
+}
+.main-header{
+    margin: 1px;
+    padding: 20px;
+    padding: 50px;
+    border: 5px solid rgb(31, 1, 41);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: linear-gradient(to top right, rgb(140, 85, 145), rgb(30, 2, 41));
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Times, 'Times New Roman', serif;
+    color: rgb(204, 174, 216);
+}
+fieldset{
+    border:1px dashed black ; 
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(197, 167, 218);
+    margin: 15x;
+}
+.section1{
+    margin: 20px;
+    grid-column: 2;
+    grid-row: 1;
+}
+.section2{
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+.section3{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.section1 p{
+    text-align: justify;
+    height: 150px;
+    overflow: scroll;
+    cursor: move;
+}
+legend{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+ul li a:hover{
+    color: black;
+    font-weight: bold;
 }
