@@ -1,32 +1,107 @@
 body{
-    background-color:rgb(248, 203, 143);
-    border-radius: 25px;
-    border: 1px dotted black;
-    margin: 10px;
+    background-color:antiquewhite;
+    border: 3px dotted black;
+    border-radius: 20px;
     padding: 10px;
-    
+    margin: 15px;
 }
-
-.h1{
-     background: linear-gradient( to right, rgb(250, 105, 40), rgb(255, 0, 1));
-     text-align: center;
-     color: rgb(0, 0, 0);
-     border: 3px solid black ;
-     border-top-left-radius: 10px;
-     border-top-right-radius: 10px;
-     margin: 20px;
-     padding: 20px;
+h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 2px solid black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: rgb(255, 0, 0);
+    background: linear-gradient(to top right,rgb(237, 19, 45), rgb(116, 30, 244)) ;
 }
-.div{
-    background: linear-gradient(to right, rgb(46, 255, 46), rgb(93, 93, 252));
-}
-
-.fieldset{
-    border: dotted 2px;
-}
-
 .container-grid{
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: 100px 100px 100px;
     grid-gap: 10px;
+    grid-template-columns: repeat(5);
+}
+.section1{
+    grid-column: 3;
+    grid-row: 1;
+    margin-bottom: 30px;
+}
+.section1 fieldset{
+    border-style: dashed;
+    border-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    overflow: scroll;
+    height: 260px;
+    background-color: rgb(0, 242, 255);
+    cursor:col-resize;
+}
+.section2{
+    grid-column: 2 / 6;
+    grid-row: 3 / 5;
+    padding: 80px;
+}
+.section2 legend{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section2 ul li a {
+    color: red;
+}
+.section2 ul li a.a2 {
+    color: blue;
+}
+.section2 a:hover{
+    font-size: 20px;
+    cursor:progress;
+}
+.section2 fieldset{
+    border: 2px;
+    border-radius: 15px;
+    border-style:  dashed ;
+    border-color: black;
+    background-color: rgba(255, 222, 11, 0.859);
+    cursor:help;
+}
+#theform{
+    display: table;
+}
+.tabale{
+    display: table-row;
+}
+.section3{
+    display: table-cell;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.section3 legend{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section3 fieldset{
+    grid-column: 1;
+    grid-row: 1;
+    border-style: dashed;
+    border-color: black;
+    border-radius: 30px;  
+    background-color: rgb(38, 250, 187);
+}
+.row{
+    display: table;
+}
+#save input{
+    padding-right: 8px;
+    padding-bottom: 3px;
+    background-color: white;
+    border-color: pink;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+#save input:hover{
+    background-color: rgb(226, 43, 43);
+    color: rgb(255, 255, 255);
+    transform: scale(1.8);
+    transition: 0.4s;
 }
