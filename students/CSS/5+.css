@@ -1,45 +1,134 @@
+body{
+    border-radius: 15px;
+    background-color:rgb(151, 106, 136);
+    
+    
+}
+
+
+
 h1{
-   
-    border: rgb(11, 236, 11);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    color: rgb(252, 8, 130);
+    border: rgb(116, 5, 60) 5px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     text-align: center;
-    font-weight: 225px;
-    background: linear-gradient(to top right ,blue , pink )
+    font-weight: 200px;
+    background:linear-gradient(to top right,rgb(63, 1, 22) 10%, white); 
+    height: 100px;
 
 }
 .container{
-         display:grid;
-
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5);
+    
 }
-.box{
-     
-    font-size: 25px;
-    font-style: italic;
-    color: rgb(248, 11, 228) ;
 
-}
 legend{
-       font-style: italic;
-       font-size: 25px ;
-       color: rgb(57, 4, 92);
-
-
-
-
+    font-style: italic;
+    font-size: 25px;
+    color:rgb(208, 159, 236);
+    
 }
 
 fieldset{
-      border: black 2px solid;
-      background-color: rgb(243, 226, 235);
-      border-style: dotted ;
-}
-#f{
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color:rgb(238, 6, 149);
+    border-style:dotted;
     
-    display:table ;
-    
-
-
-
-
 }
+
+.fieldset1{
+    background-color: rgb(100, 7, 7) ;
+    
+}
+
+.fieldset2{
+    background-color: rgb(233, 19, 90);
+    
+}
+
+
+
+a:hover{
+    color: rgb(207, 204, 30);
+    cursor:help;
+}
+
+#Theform{
+    display: table;
+    
+}
+
+.table{
+    display: table-row;
+}
+
+.section1{
+
+   
+ 
+    grid-column: 3;
+    grid-row: 1;
+    
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.section2{
+   
+    grid-column: 3;
+    grid-row: 3;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 40px;
+    
+}
+.section3{
+    grid-column: 1;
+    grid-row: 1;
+    color: rgb(245, 200, 226);
+    text-align: center;
+    font-size: 20px;
+   
+}
+
+.row{
+    display: table-row;
+}
+
+.row label{
+    display: table-cell;
+    padding : 2px;
+}
+
+.row input{
+    display: table-cell;
+    padding : 2px;
+}
+
+.submit:hover{
+    color: rgb(238, 13, 88);
+    background-color: rgb(145, 18, 79);
+}
+
+.paragragh{
+    overflow: scroll;
+    height: 150px;
+}
+
+.paragragh:hover{
+    cursor: move;
+}
+
+
+
+
+
+
+
