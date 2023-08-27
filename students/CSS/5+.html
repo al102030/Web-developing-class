@@ -1,61 +1,134 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Exam</title>
-    <link rel="stylesheet" href="ex.css">
-  </head>
-  <body>
-    <h1>My Website</h1>
-    <div class ="container">
-        <div class="s1">
-	<fieldset>
-        
-		<legend>About</legend>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
-			laborum, aut alias nisi dolor, cupiditate atque odio corrupti libero
-			culpa commodi, assumenda quibusdam? Sed vel dolorem nemo ut magni hic. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nam vitae modi harum consectetur iste? Laudantium recusandae velit optio ut dolore et facere exercitationem blanditiis, explicabo numquam quam fugit omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis itaque eos, asperiores aliquid fugit quasi modi voluptates natus quaerat exercitationem quia sequi obcaecati non, eum corrupti! Ex, error. Adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis ipsa aut. Voluptatum, nisi. Molestias, quo quod! Natus debitis blanditiis provident ea ducimus expedita tenetur illo similique, sapiente ullam ipsa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, suscipit aliquam. Saepe, officia. Quae praesentium totam fugit est consectetur porro! Nisi adipisci ullam architecto veniam odio, quam nemo voluptatem facilis.
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consequatur reiciendis rerum voluptate! Vitae minus possimus molestias inventore, hic a dolor dolore ducimus aut animi necessitatibus! In facilis voluptatum incidunt?
-		</p>
-	</fieldset>
-    </div>
-    <div class="s2">
-	<fieldset>
-		<legend>Websites</legend>
-		<ul>
-			<li><a href="https://www.google.com/" target="_blank">Google</a></li>
-			<li><a href="https://www.apple.com/" target="_blank">Apple</a></li>
-		
-        </ul>
-	</fieldset>
-    </div>
-    <div class="s3">
-	<fieldset>
-		<legend>Personal Information</legend>
-		<form action="#" method="GET" id="theform">
+body{
+    border-radius: 15px;
+    background-color:rgb(151, 106, 136);
+    
+    
+}
 
-				<label for="name">Full Name</label>
-				<input type="text" id="name" size="25" placeholder="Full Name"/><br /><br />
 
-				<label for="email">Email</label>
-				<input type="email" id="email" size="25" placeholder="Email"/><br /><br />
 
-				<label for="message">Your Message</label><br/>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea><br /><br />
+h1{
+    color: rgb(252, 8, 130);
+    border: rgb(116, 5, 60) 5px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    font-weight: 200px;
+    background:linear-gradient(to top right,rgb(63, 1, 22) 10%, white); 
+    height: 100px;
 
-				<label for="gender">Select your Gender: </label>
-				<select name="gender" id="gender">
-					<option value="m">Male</option>
-					<option value="f">Female</option></select><br /><br />
+}
+.container{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5);
+    
+}
 
-				<label for="birthday">select you birthday: </label>
-				<input type="date" name="birthday" id="birthday" /><br /><br />
+legend{
+    font-style: italic;
+    font-size: 25px;
+    color:rgb(208, 159, 236);
+    
+}
 
-				<input type="submit" name="submit" value="Save" />
+fieldset{
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color:rgb(238, 6, 149);
+    border-style:dotted;
+    
+}
 
-		</form>
-	</fieldset>
-     </div>
-</div>
-   </body>
-</html>
+.fieldset1{
+    background-color: rgb(100, 7, 7) ;
+    
+}
+
+.fieldset2{
+    background-color: rgb(233, 19, 90);
+    
+}
+
+
+
+a:hover{
+    color: rgb(207, 204, 30);
+    cursor:help;
+}
+
+#Theform{
+    display: table;
+    
+}
+
+.table{
+    display: table-row;
+}
+
+.section1{
+
+   
+ 
+    grid-column: 3;
+    grid-row: 1;
+    
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.section2{
+   
+    grid-column: 3;
+    grid-row: 3;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 40px;
+    
+}
+.section3{
+    grid-column: 1;
+    grid-row: 1;
+    color: rgb(245, 200, 226);
+    text-align: center;
+    font-size: 20px;
+   
+}
+
+.row{
+    display: table-row;
+}
+
+.row label{
+    display: table-cell;
+    padding : 2px;
+}
+
+.row input{
+    display: table-cell;
+    padding : 2px;
+}
+
+.submit:hover{
+    color: rgb(238, 13, 88);
+    background-color: rgb(145, 18, 79);
+}
+
+.paragragh{
+    overflow: scroll;
+    height: 150px;
+}
+
+.paragragh:hover{
+    cursor: move;
+}
+
+
+
+
+
+
+
