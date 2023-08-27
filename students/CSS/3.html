@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Exam</title>
-    <link rel="stylesheet" href="3.css" type="text/css" />
+    <link rel="stylesheet" href="ex.css" type="text/css" />
   </head>
   <body>
     <h1 class="main-header">My Website</h1>
@@ -52,40 +52,39 @@
       <div class="section3">
         <fieldset>
           <legend>Personal Information</legend>
-          <form action="#" method="GET">
+          <form action="#" method="GET" id="theform">
+
+            <div class="row">
             <label for="name">Full Name</label>
-            <input
-              type="text"
-              id="name"
-              size="25"
-              placeholder="Full Name"
-            /><br /><br />
+            <input type="text" id="name" size="25" placeholder="Full Name"/> <br /><br />
+            </div>
 
+            <div class="row" >
             <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              size="25"
-              placeholder="Email"
-            /><br /><br />
+            <input type="email" id="email" size="25" placeholder="Email" /><br /><br />
+            </div>
 
+            <div class="row">
             <label for="message">Your Message</label><br />
-            <textarea name="message" id="message" cols="30" rows="10"></textarea
-            ><br /><br />
+            <textarea name="message" id="message" cols="30" rows="10"></textarea> <br /><br />
+            </div>
 
+            <div class="row">
             <label for="gender">Select your Gender: </label>
             <select name="gender" id="gender">
               <option value="m">Male</option>
-              <option value="f">Female</option></select
-            ><br /><br />
+              <option value="f">Female</option></select><br /><br />
+            </div>
 
+            <div class="row">
             <label for="birthday">select you birthday: </label>
             <input type="date" name="birthday" id="birthday" /><br /><br />
+            </div>
 
             <input type="submit" name="submit" value="Save" />
+
           </form>
         </fieldset>
       </div>
     </div>
   </body>
-</html>
