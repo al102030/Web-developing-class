@@ -5,10 +5,13 @@
     <link rel="stylesheet" href="ex.css" type="text/css">
   </head>
   <body>
-    <h1 class="continer-grid">My Website</h1>
-    <div>
-	    <fieldset>
-		    <legend>About</legend>
+	<div class="continer-grid">
+		<div class="section1">
+    <h1>My Website</h1>
+		</div>
+		<div class="section2">
+	    <fieldset style="border:3px dashed black">
+		    <legend><em>About</em></legend>
 		        <p> 
 			    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
 			    laborum, aut alias nisi dolor, cupiditate atque odio corrupti libero
@@ -18,19 +21,19 @@
 	    </fieldset>
     </div>
     <div>
-	    <fieldset>
-            <div>
-		    <legend>Websites</legend>
+	    <fieldset style="border:3px dashed black">
+            <div class="section3">
+		    <legend><em>Websites</em></legend>
 		        <ul>        
-			        <li><a href="https://www.google.com/" target="_blank">Google</a></li>
-			        <li><a href="https://www.apple.com/" target="_blank">Apple</a></li>
+			       <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+			       <li><a href="https://www.apple.com/" target="_blank">Apple</a></li>
 		        </ul>
                 </div>
 	    </fieldset>
     </div>
-    <div>
-	    <fieldset>
-		    <legend>Personal Information</legend>
+    <div class="section4" id="the form">
+	    <fieldset style="border:3px dashed black">
+		    <legend><em>Personal Information</em></legend>
 		        <form action="#" method="GET">
 
 				    <label for="name">Full Name</label>
@@ -50,11 +53,11 @@
 				<label for="birthday">select you birthday: </label>
 				<input type="date" name="birthday" id="birthday" /><br /><br />
 
-				<input type="submit" name="submit" value="Save" />
+				<input type="submit" name="submit" value="Save" id="haver"/>
 
 		    </form>
 	    </fieldset>
     </div>
-
+	</div>
    </body>
 </html>
