@@ -64,3 +64,20 @@ ul li a:hover{
     font-weight: bold;
     cursor: progress;
 }
+
+#theform{
+    display: table;
+}
+.row{
+    display: table-row;
+}
+.row table{
+    display: table-cell;
+    padding: 2px;
+    text-align: right;
+}
+
+.row input{
+    display: table-cell;
+    padding: 2px;
+}
