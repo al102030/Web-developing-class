@@ -1,0 +1,117 @@
+/* Very Good!
+Your score (in CSS exam): 100 (of 100)
+You have lost 5 marks on the exam(-5).
+You have achieved 5 marks in class(+5) */
+
+body{
+    background-color: pink;
+    border: black dotted 2px;
+    margin: 25px;
+    padding: 20px;
+}
+
+h1{
+    color: red;
+    border: blue solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    margin: 15px;
+    padding: 40px;
+    background: linear-gradient(to right, rgba(41, 236, 58, 0.3), rgb(235, 82, 163));
+}
+
+#gridcontainer{
+    display: grid;
+    grid-template-columns: 45% auto;
+    grid-auto-rows: 280px;
+}
+
+.c1{
+    background-color: rgb(68, 222, 68);
+    overflow: scroll;
+    cursor: move;
+    height: 200px;
+    width: 550px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.Section1{
+    float: right;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+.c2{
+    background-color: aqua;
+    height: 100px;
+    width: 550px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.Section2{
+    float: right;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+a:link{
+    font-size: larger;
+}
+
+a:hover{
+    color: red;
+    cursor: crosshair;
+}
+
+.c3{
+    background-color: rgb(78, 78, 228);
+    margin: 25px;
+    padding: 20px;
+    height: 400px;
+    width: 500px;
+}
+
+.Section3{
+    float: left;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#theForm{
+    display: table;
+}
+
+.row{
+    display: table-row;
+}
+
+.row label{
+    display: table-cell;
+    padding: 2px;
+    text-align: right;
+}
+
+.row input{
+    display: table-cell;
+    padding: 2px;
+}
+
+.button:hover{
+    color: blue;
+    transform: scale(1.2);
+}
+
+legend{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.c1 , .c2 , .c3{
+    border: black dashed 2px;
+    border-radius: 5px;
+}
