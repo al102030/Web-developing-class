@@ -1,0 +1,119 @@
+body{
+    background-color: pink;
+    border: black dotted 3px;
+    margin: 20px;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h1{
+    color: red;
+    border: blue solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    margin: 20px;
+    padding: 40px;
+    background: linear-gradient(to left, rgba(41, 236, 57, 0.993), rgb(255, 139, 201));
+}
+
+#gridcontainer{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-auto-rows: 250px;
+}
+
+.fildset1{
+    background-color: greenyellow;
+    overflow: scroll;
+    cursor: move;
+    height: 200px;
+    width: 550px;
+    margin: 15px;
+    padding: 20px;
+}
+
+.Section1{
+    float: right;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+.fildset2{
+    background-color: white;
+    height: 100px;
+    width: 550px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.Section2{
+    float: right;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+a:link{
+    font-size: xx-large;
+}
+
+a:hover{
+    color: yellow;
+    cursor: hand;
+}
+
+.fildset3{
+    background-color:darkorchid;
+    margin: 30px;
+    padding: 20px;
+    height: 400px;
+    width: 500px;
+}
+
+.Section3{
+    float: left;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#Form{
+    display: table;
+}
+
+.row{
+    display: table-row;
+}
+
+.row label{
+    display: table-cell;
+    padding: 3px;
+    text-align: right;
+}
+
+.row input{
+    display: table-cell;
+    padding: 3px;
+}
+
+.bottom:hover{
+    color: rgb(255, 242, 66);
+    transform: scale(1.4);
+    border: black solid 12px;
+    border-radius: 10px;
+    display: inline;
+}
+
+legend{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.fildset1 , .fildset2 , .fildset3{
+    border: black solid 2px;
+    border-radius: 8px;
+}
