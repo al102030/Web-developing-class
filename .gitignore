@@ -8,12 +8,6 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-# ex.css
-# ex.html
-1.css
-1.html
-noex.css
-noex.html
 .DS_Store
 build/
 develop-eggs/
