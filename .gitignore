@@ -7,10 +7,9 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-ex.html
-ex.css
 .Python
 .DS_Store
+MyNoteImages/
 build/
 develop-eggs/
 dist/
