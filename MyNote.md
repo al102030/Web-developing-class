@@ -169,4 +169,27 @@
    * example of command prompt and quit()
 * <span style="color: #ffe51e;">Infinite Loops</span>
    * test it for while True: and use break and if to change it. and use a list of commands
+
+
+### <span style="color: #03ce14;">Functions</span>
+* <span style="color: #399099;">Defining Functions</span>
+   * Reuseable chunks of code / built-in functions like print() / round() / range()
+   *  Define a function using 'def' keyword
+   *  Naming in functions follows all variables naming rules
+   *  Two Lines break
+* <span style="color: #399099;">Arguments</span>
+   * Differences between arguments and parameters
+   * An example for first_name and last_name
+*  <span style="color: #399099;">Types of functions</span>
+   * Functions that perform a task / functions that calculate anf return a value
+   * example for two type in real world and -> print() and round()
+   * Greet() function in two type
+   * ![](MyNoteImages/10.png)
+   * All functions return None by default
+*  <span style="color: #399099;">Keyword Arguments</span>
+   * Saving info in invisible variable in python
+   * Use keyword variables to make our code more readable 
+   * ![](MyNoteImages/11.png)
+   * Use keyword arguments when use a lot of variable to make it clear
+ *  <span style="color: #399099;">Default Arguments</span>
    * 
