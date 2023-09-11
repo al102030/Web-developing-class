@@ -1,4 +1,4 @@
-# =========================practice One==============================
+# =========================Question One==============================
 # if 10 == "10":
 #     print("a")
 # elif "bag" > "apple" and "bag" > "cat":
@@ -6,7 +6,7 @@
 # else:
 #     print("c")
 
-# =========================practice Two==============================
+# =========================Question Two==============================
 # n = 10
 # spaces = n-1
 # for number in range(1, n, 2):
@@ -14,14 +14,14 @@
 #     spaces -= 1
 
 
-# =========================practice Three==============================
+# =========================Question Three==============================
 # command = ""
 # while command.lower() != "exit":
 #     command = input(">>>: ")
 #     print("Echo", command)
 
 
-# =========================practice Four==============================
+# =========================Question Four==============================
 def average():
     summery, counter = 0, 0
     while True:
