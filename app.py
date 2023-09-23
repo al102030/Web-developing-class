@@ -81,37 +81,96 @@
 
 
 # =========================Question Seven==============================
-def count_vowels(word):
-    vowels = "aeiou"
-    count = 0
-    word = word.lower()
-    for char in word:
-        if char in vowels:
-            count += 1
-    return count
+# def count_vowels(word):
+#     vowels = "aeiou"
+#     count = 0
+#     word = word.lower()
+#     for char in word:
+#         if char in vowels:
+#             count += 1
+#     return count
 
 
-def reverse_string(sentence):
-    reversed_sentence = ""
-    word = ""
-    i = len(sentence) - 1
-    while i >= 0:
-        if sentence[i] == " ":
-            reversed_sentence += word[::-1] + " "
-            word = ""
-        else:
-            word += sentence[i]
-        i -= 1
-    reversed_sentence += word[::-1]
-    return reversed_sentence
+# def reverse_string(sentence):
+#     reversed_sentence = ""
+#     word = ""
+#     i = len(sentence) - 1
+#     while i >= 0:
+#         if sentence[i] == " ":
+#             reversed_sentence += word[::-1] + " "
+#             word = ""
+#         else:
+#             word += sentence[i]
+#         i -= 1
+#     reversed_sentence += word[::-1]
+#     return reversed_sentence
 
 
-def main():
-    sentence_input = input("Enter a sentence: ")
-    vowels_count = count_vowels(sentence_input)
-    print(f"The number of vowels in '{sentence_input }' is: {vowels_count}")
-    reversed_sentence = reverse_string(sentence_input)
-    print(f"The reversed sentence is: {reversed_sentence}")
+# def main():
+#     sentence_input = input("Enter a sentence: ")
+#     vowels_count = count_vowels(sentence_input)
+#     print(f"The number of vowels in '{sentence_input }' is: {vowels_count}")
+#     reversed_sentence = reverse_string(sentence_input)
+#     print(f"The reversed sentence is: {reversed_sentence}")
 
 
-main()
+# main()
+
+
+# =========================Question Eight==============================
+
+# def remove_duplicates(strings):
+#     unique_strings = []
+#     for string in strings:
+#         if string not in unique_strings:
+#             unique_strings.append(string)
+#     return unique_strings
+
+
+# def find_longest_word(words):
+#     longest_word = ""
+#     for word in words:
+#         if len(word) > len(longest_word):
+#             longest_word = word
+#     return longest_word
+
+
+# def main():
+
+#     strings = ["apple", "banana", "cherry", "apple", "kiwi", "banana"]
+#     unique_strings = remove_duplicates(strings)
+#     print("Unique strings:", unique_strings)
+
+#     words = ["cat", "elephant", "tiger", "lion", "giraffe"]
+#     longest_word = find_longest_word(words)
+#     print("Longest word:", longest_word)
+
+
+# main()
+
+lst = [
+    ("p1", 10),
+    ("p2", 9),
+    ("p3", 12)
+]
+
+
+# def sort_item(item):
+#     return item[1]
+
+
+# lst.sort(key=sort_item)
+# print(lst)
+
+# prices = []
+# for item in lst:
+#     prices.append(item[1])
+
+# prices = map(lambda item: item[1], lst)
+# prices = [item[1] for item in lst]
+# print(prices)
+
+
+filtered = filter(lambda item: item[1] >= 10, lst)
+filtered = [item for item in lst if item[1] >= 10]
+print(filtered)
