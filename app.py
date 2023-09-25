@@ -1,3 +1,4 @@
+from pprint import pprint
 # =========================Question One==============================
 # if 10 == "10":
 #     print("a")
@@ -148,11 +149,12 @@
 
 # main()
 
-lst = [
-    ("p1", 10),
-    ("p2", 9),
-    ("p3", 12)
-]
+# ===============================Data structures=====================
+# lst = [
+#     ("p1", 10),
+#     ("p2", 9),
+#     ("p3", 12)
+# ]
 
 
 # def sort_item(item):
@@ -171,6 +173,12 @@ lst = [
 # print(prices)
 
 
-filtered = filter(lambda item: item[1] >= 10, lst)
-filtered = [item for item in lst if item[1] >= 10]
-print(filtered)
+# filtered = filter(lambda item: item[1] >= 10, lst)
+# filtered = [item for item in lst if item[1] >= 10]
+# print(filtered)
+
+# lst1 = ["a", "b", "c"]
+# lst2 = [1, 2, 3]
+
+# x = zip("@#$", lst1, lst2)
+# print(list(x))

@@ -276,8 +276,57 @@
  * <span style="color: #ff4909;">List Comprehension</span>
    * "[expression for item in items] / [item[1] for item in lst]
    * To convert filtered list to comprehension do this: [item for item in lst if item[1] >= 10]
+   * We can use if .. else statement in comprehension at first part of clause
 * <span style="color: #ff4909;">Zip Function</span>
    * To combine two or more equal list (equal in list member) and make a new list, use zip function
    * Zip function return a tuple for each member contain all same index items
+* <span style="color: #ff4909;">Stacks</span>
+   * A LIFO data structure 
+   * Website's pages visiting hierarchy is good simple fore Stack
+   * We can use . append(), .pop() methods for simulating stack and stc[-1] and not stc to check it
+* <span style="color: #ff4909;">Queues</span>
+   * A FIFO data structure
+   * We use deque for optimize Using queue
+   * ![](MyNoteImages/19.png)
+* <span style="color: #ff4909;">Tuples</span>
+   * Tuple is a read only list and we use () to define it
+   * if we remove () Python Assume it as tuple like 1, or 1,2
+   * We can multiple or concatenate tuples
+   * We can convert a list or any iterable into a Tuple using tuple()
+   * We cannot mutate tuples and assign a value of tuple to a new value
+* <span style="color: #ff4909;">Swapping Variables</span>
+   * x, y = Y, x
+   * This clause works as unpacking in tuples x, y = (11, 10)
+* <span style="color: #ff4909;">Arrays</span>
+   * If we deal with large sequence of numbers we should use Array
+   * Array take less memory and work a little bit faster
+   * For the using array we should import it
+   * Array(typecode, iterable) 
+   * All members in array should be the same type
+* <span style="color: #ff4909;">Sets</span>
+   * Set is a unordered collection of data without duplicates
+   *  By converting a List to set we can remove all duplicates / set()
+   *  ![](MyNoteImages/20.png)
+   *  Shining usage of sets is in mathematics
+   *  To make union of Two sets print(set1 | st2) / print(set1 & st2) / print(set1 - st2) / print(set1 ^ st2)
+   *  Sets items not in sequence and we cannot access them by index
+   *  We can existence of a value by using if .. in statement
+* <span style="color: #ff4909;">Dictionaries</span>
+   * Dictionary is a key value per collection of data
+   * In dictionary keys can only be an integer of string and value can be kind of anything
+   * We can define a dictionary using dict() function
+   * ![](MyNoteImages/21.png) 
+* <span style="color: #ff4909;">Dictionary Comprehension</span>
+   * We can use Comprehension for sets and dictionaries
+   * Val = {x : x*2 for x in range(5)}
+* <span style="color: #ff4909;">Generators</span>
+   * Generator object like list is a iterable but generate value in each iteration
+   * Generators don't store all values in memory
+   * ![](MyNoteImages/22.png)
+   * Generators objects has no len
+* <span style="color: #ff4909;">Unpacking Operators</span>
+   * We can print Items of a list in unpacked using [*numbers]
+   * ![](MyNoteImages/23.png)
+   * We can use unpacking operators to combine lists
+   * ![](MyNoteImages/24.png)
    * 
-  
