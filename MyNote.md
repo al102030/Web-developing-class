@@ -356,26 +356,3 @@
 * <span style="color: #ff1199;">Cost of Raising Exceptions</span>
    * Using timeit library to calculate time
    * If we are building a simple app we can use raise exception and try block but in complex program with lots of processes or users it's better to handle problem without try or raise clauses.
-### <span style="color: #03ce14;">Classes</span>
-* <span style="color: #ff1199;">Classes</span>
-   * A class is a blueprint or template that defines the structure and behavior of an object
-   * An instance of a class. It represents a specific, unique occurrence of that class, with its own set of data and the ability to perform actions defined by the class
-   * Classes form the building blocks for organizing and manipulating data in a comprehensive and organized manner, enabling efficient and reusable software development.
-   * ![](MyNoteImages/29.png)
-* <span style="color: #ff1199;">Creating Classes</span>
-   * We follow Pascal naming rule in classes naming
-   * We can define a object by calling a class and put it in a variable
-   * By using isinstance() method we can check that an object is instance of a certain class
-   * ![](MyNoteImages/30.png)
-* <span style="color: #ff1199;">Constructors</span>
-   * __init__ method is especial magic method that executed when a new object was creating.
-   * self is reference to the current new object
-   * Python create our new object and put it in memory and reference that in self statement.
-   * An object has its own attributes that have data which related to it
-   * For example human is class that have its attributes like eye color, skin color, hight, wight, and etc, and its functions like walking, jumping, eating, and etc
-   * Python fill self variable automatically for us, when an object is creating.
-* <span style="color: #ff1199;">Class vs Instance Attributes</span>
-   * We can define a new attribute for an object after creating it
-   * Instance attributes belong to each object separately
-   * Class level attributes are shared across all instances of a class 
-   * 
