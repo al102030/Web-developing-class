@@ -1,3 +1,4 @@
+# from timeit import timeit
 # =========================Question One==============================
 # if 10 == "10":
 #     print("a")
@@ -181,3 +182,68 @@
 
 # x = zip("@#$", lst1, lst2)
 # print(list(x))
+
+
+# =========================Question Nine==============================
+# dict1 = {"a": -12, "b": 10, "c": 5, "d": -2, "e": 6, "f": 22, "g": 0}
+# print([item if item >= 0 else 0 for item in dict1.values()])
+
+
+# =========================Question Ten==============================
+
+# sentence = "This is a common interview question"
+
+# char_frequency = {}
+# for char in sentence:
+#     if char not in char_frequency:
+#         char_frequency[char] = 1
+#     else:
+#         char_frequency[char] += 1
+
+# char_frequency_sorted = sorted(char_frequency.items(),
+#                                key=lambda kv: kv[1],
+#                                reverse=True)
+# print(char_frequency_sorted[0])
+
+
+# ================================Exceptions Examples==========================
+
+# while True:
+#     try:
+#         x = int(input("Enter a number: "))
+#         print(x)
+#     except ValueError:
+#         print("Please Enter a Number!")
+
+
+# code1 = """
+# def calculate_xfactor(age):
+#     if age <= 0:
+#         raise ValueError("Age cannot be zero or less!")
+#     return 10 / age
+
+
+# try:
+#     calculate_xfactor(-1)
+# except ValueError as error:
+#     #print(error)
+#     pass
+# """
+
+# code2 = """
+# def calculate_xfactor(age):
+#     if age <= 0:
+#         return None
+#     return 10 / age
+
+
+# xfactor = calculate_xfactor(-1)
+# if xfactor == None:
+#     pass
+# """
+
+# print("First code time: ", timeit(code1, number=10000))
+# print("Second code time: ", timeit(code2, number=10000))
+
+
+# ======================================classes==========================
