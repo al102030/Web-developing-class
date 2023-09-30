@@ -356,3 +356,64 @@
 * <span style="color: #ff1199;">Cost of Raising Exceptions</span>
    * Using timeit library to calculate time
    * If we are building a simple app we can use raise exception and try block but in complex program with lots of processes or users it's better to handle problem without try or raise clauses.
+### <span style="color: #03ce14;">Classes</span>
+* <span style="color: #ff1199;">Classes</span>
+   * A class is a blueprint or template that defines the structure and behavior of an object
+   * An instance of a class. It represents a specific, unique occurrence of that class, with its own set of data and the ability to perform actions defined by the class
+   * Classes form the building blocks for organizing and manipulating data in a comprehensive and organized manner, enabling efficient and reusable software development.
+   * ![](MyNoteImages/29.png)
+   * Text class in a social media as example
+* <span style="color: #ff1199;">Creating Classes</span>
+   * We follow Pascal naming rule in classes naming
+   * We can define a object by calling a class and put it in a variable
+   * By using isinstance() method we can check that an object is instance of a certain class
+   * ![](MyNoteImages/30.png)
+* <span style="color: #ff1199;">Constructors</span>
+   * __init__ method is especial magic method that executed when a new object was creating.
+   * self is reference to the current new object
+   * Python create our new object and put it in memory and reference that in self statement.
+   * An object has its own attributes that have data which related to it
+   * For example human is class that have its attributes like eye color, skin color, hight, wight, and etc, and its functions like walking, jumping, eating, and etc
+   * Python fill self variable automatically for us, when an object is creating.
+   * We can use self to call this object attributes or functions or call foreign functions without it 
+* <span style="color: #ff1199;">Class vs Instance Attributes</span>
+   * We can define a new attribute for an object after creating it
+   * Instance attributes belong to each object separately
+   * Class level attributes are shared across all instances of a class 
+   * ![](MyNoteImages/32.png)
+* <span style="color: #ff1199;">Class vs Instance Methods</span>
+   * When we create an instance of a class, we can use its functions as instance methods.
+   * When we don't really need an existing object, but we need a particular function we can use class methods
+   * In definition of class methods (factory method) we use 'cls' clause instead of 'self' and decorated it with '@classmethod', because its not belong to any specific object.
+   * ![](MyNoteImages/33.png)
+* <span style="color: #ff1199;">Magic Methods</span>
+   * Magic methods called by python interpreter automatically
+   * Search python3 magic methods in google
+   * Use __str__ as example to convert variables to string
+   * Print a object before define a __str__ method
+   * ![](MyNoteImages/34.png)
+* <span style="color: #ff1199;">Comparing Objects</span>
+   * Equality operator compare the object references.
+   * We should use python magic methods to represent a Comprehensible form of our class to user
+   * ![](MyNoteImages/35.png)
+   * If you implement a magic method python automatically figure out what to do if you use the other one.
+* <span style="color: #ff1199;">Supporting Arithmetic Operations</span>
+   * ![](MyNoteImages/36.png)
+* <span style="color: #ff1199;">Creating Custom Containers</span>
+   * We can define our custom Container using python built-in data structures like dictionary. 
+   * ![](MyNoteImages/37.png)
+* <span style="color: #ff1199;">Private Members</span>
+   * We use double_underscore before of an attribute to make it private
+   * A private member con't be accessed from the outside
+   * Its tell user to be cautious about this attribute
+   * We can access to all attributes of a class using __dict__() magic method
+* <span style="color: #ff1199;">Properties</span>
+   * We use properties to have control on class attributes
+   * For example in product class for negative values we can use setter or getter method to perform it
+   * ![](MyNoteImages/38.png)
+   * To make a pythonic code we use property function and save it in class level attribute
+   * ![](MyNoteImages/39.png)
+   * Also we can decorate our setter and getter by property decorator and make cleaner code.
+   * ![](MyNoteImages/40.png)
+* <span style="color: #ff1199;">Inheritance</span>
+   * 
