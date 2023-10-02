@@ -246,7 +246,7 @@
 # print("Second code time: ", timeit(code2, number=10000))
 
 
-# ======================================classes==========================
+# ======================================Question Eleven==========================
 
 # phone_book = {
 #     "John Doe": "09111234562",
@@ -311,32 +311,32 @@
 #     else:
 #         print("Firstly, select an option (add or src)")
 
-class Point:
+# class Point:
 
-    default_color = "red"
+#     default_color = "red"
 
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
 
-    def __str__(self):
-        return f"({self.x}, {self.y})"
+#     def __str__(self):
+#         return f"({self.x}, {self.y})"
 
-    def __eq__(self, other):
-        return self.x == other.x and self.y == other.y
+#     def __eq__(self, other):
+#         return self.x == other.x and self.y == other.y
 
-    def __gt__(self, other):
-        return self.x > other.x and self.y > other.y
+#     def __gt__(self, other):
+#         return self.x > other.x and self.y > other.y
 
-    def __add__(self, other):
-        return Point(self.x + other.x, self.y + other.y)
+#     def __add__(self, other):
+#         return Point(self.x + other.x, self.y + other.y)
 
-    @classmethod
-    def zero(cls):
-        return cls(0, 0)
+#     @classmethod
+#     def zero(cls):
+#         return cls(0, 0)
 
-    def draw(self):
-        print(f"Point ({self.x}, {self.y})")
+#     def draw(self):
+#         print(f"Point ({self.x}, {self.y})")
 
 
 # point = Point(1, 2)
@@ -370,19 +370,57 @@ class Point:
 # product.
 
 
-class Product:
-    def __init__(self, price):
-        self.price = price
+# class Product:
+#     def __init__(self, price):
+#         self.price = price
 
-    @property
-    def price(self):
-        return self.__price
+#     @property
+#     def price(self):
+#         return self.__price
 
-    @price.setter
-    def price(self, value):
-        if value < 0:
-            raise ValueError("Price cannot be negative.")
-        self.__price = value
+#     @price.setter
+#     def price(self, value):
+#         if value < 0:
+#             raise ValueError("Price cannot be negative.")
+#         self.__price = value
 
 
-product = Product(-50)
+# product = Product(-50)
+
+
+# ======================================Question Twelve==========================
+
+# Class name = bank account
+# attributes = account_number, balance, currency
+# Methods = deposit, withdraw, get_balance
+
+class BankAccount:
+    def __init__(self, account_number, balance, currency):
+        self.account_number = account_number
+        self.balance = balance
+        self.currency = currency
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+        else:
+            print("Insufficient funds!")
+
+    def get_balance(self):
+        return self.balance
+
+
+# Create an instance of the BankAccount class
+account = BankAccount("12345", 1000, "USD")
+
+# Perform a deposit of 500
+account.deposit(500)
+
+# Perform a withdrawal of 200
+account.withdraw(200)
+
+# Print the final balance
+print("Final balance:", account.get_balance())
