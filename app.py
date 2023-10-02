@@ -1,3 +1,4 @@
+from abc import ABC, abstractmethod
 # from timeit import timeit
 # =========================Question One==============================
 # if 10 == "10":
@@ -393,34 +394,3 @@
 # Class name = bank account
 # attributes = account_number, balance, currency
 # Methods = deposit, withdraw, get_balance
-
-class BankAccount:
-    def __init__(self, account_number, balance, currency):
-        self.account_number = account_number
-        self.balance = balance
-        self.currency = currency
-
-    def deposit(self, amount):
-        self.balance += amount
-
-    def withdraw(self, amount):
-        if self.balance >= amount:
-            self.balance -= amount
-        else:
-            print("Insufficient funds!")
-
-    def get_balance(self):
-        return self.balance
-
-
-# Create an instance of the BankAccount class
-account = BankAccount("12345", 1000, "USD")
-
-# Perform a deposit of 500
-account.deposit(500)
-
-# Perform a withdrawal of 200
-account.withdraw(200)
-
-# Print the final balance
-print("Final balance:", account.get_balance())

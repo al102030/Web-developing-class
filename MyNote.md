@@ -416,4 +416,51 @@
    * Also we can decorate our setter and getter by property decorator and make cleaner code.
    * ![](MyNoteImages/40.png)
 * <span style="color: #ff1199;">Inheritance</span>
-   * 
+   * Example of two class which have same methods
+   * Avoid "DRY". it means: Don't Repeat Yourself
+   * We can use inheritance or composition to solve this problem
+   * Inheritance is a mechanism that allows us to define common behavior or common functions in one class and then inherit them in other classes
+   * We use parentheses in front of a class name and write the parent class inside it to inherit all attributes and methods from Base class to Sub class
+* <span style="color: #ff1199;">The Object Class</span>
+   * Use isinstance() Method to reveal relationship between classes and object class
+   * object class is base class for all classes in python
+   * issubclass() method return True if a class is subclass of another class
+* <span style="color: #ff1199;">Method Overriding</span>
+   * When we use a subclass, some methods like constructor are overriding the Base class constructor
+   * To change the sequence of call super() method we can change the position of method
+   * ![](MyNoteImages/41.png)
+* <span style="color: #ff1199;">Multi-level Inheritance</span>
+   * Inheritance prevent code duplication and allows us to reuse code
+   * Too much Inheritance between classes can increase complexity and introduce lots of issues
+   * Remember, We should use multi-level inheritance in one or two level, not more.
+* <span style="color: #ff1199;">Multiple Inheritance</span>
+   * If You use multiple Inheritance not properly it's gonna be source of issues
+   * In multiple Inheritance python interpreter, first look for greet() method in sub class and after that try to find it in multiple parents class in order from left to right
+   * Multiple inheritance is a bad thing, just like multi-level inheritance, if you don't use it properly.
+   * Before of using multiple inheritance, check that the parent classes should have the minimum subscription.
+* <span style="color: #ff1199;">A Good Example of Inheritance</span>
+   * A good Example of Inheritance on streaming from file and network in our web application.(code in app.py)
+* <span style="color: #ff1199;">Abstract Base classes</span>
+   * In our good example of inheritance, we have two serious problems: 1- We should built a sub class of Stream class and then use it 2- if we need to define a new sub class for Stream class, we should define read() method exactly like other sub stream classes.
+   * In this case we should Covert Stream class to an abstract base class
+   * first implementation : from abc import ABC, abstractmethod 
+   * ![](MyNoteImages/42.png)
+   * ![](MyNoteImages/43.png)
+   * When a class is abstract method we con not make instance of it.
+* <span style="color: #ff1199;">Polymorphism</span>
+   * poly means Many, morphism means forms
+   * By define a abstract method and concrete a method our functions can use many forms of classes automatically.
+* <span style="color: #ff1199;">Duck Typing</span>
+   * If something like duck and quacks like duck, it's a duck
+   * Python is dynamically type language and it doesn't check the type of object.
+   * if a certain method exist in object python accept it ass abstract base method
+* <span style="color: #ff1199;">Extending Built-it Types</span>
+   * We can extend a built-in class like string class in python and give it more functionality by define a new class
+   * ![](MyNoteImages/44.png)
+   * to extend Lists : ![](MyNoteImages/45.png)
+* <span style="color: #ff1199;">Data Classes</span>
+   * Sometimes in Python codes, we encounter classes that have only data and do not show any behavior.
+   * We can use id() method to print physical address of an object
+   * We can use namedtuple library to define a class that have only data
+   * ![](MyNoteImages/46.png)
+   * namedtuples are immutable
