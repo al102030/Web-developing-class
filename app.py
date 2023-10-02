@@ -394,3 +394,185 @@ from abc import ABC, abstractmethod
 # Class name = bank account
 # attributes = account_number, balance, currency
 # Methods = deposit, withdraw, get_balance
+
+# class BankAccount:
+#     def __init__(self, account_number, balance, currency):
+#         self.account_number = account_number
+#         self.balance = balance
+#         self.currency = currency
+
+#     def deposit(self, amount):
+#         self.balance += amount
+
+#     def withdraw(self, amount):
+#         if self.balance >= amount:
+#             self.balance -= amount
+#         else:
+#             print("Insufficient funds!")
+
+#     def get_balance(self):
+#         return self.balance
+
+
+# # Create an instance of the BankAccount class
+# account = BankAccount("12345", 1000, "USD")
+
+# # Perform a deposit of 500
+# account.deposit(500)
+
+# # Perform a withdrawal of 200
+# account.withdraw(200)
+
+# # Print the final balance
+# print("Final balance:", account.get_balance())
+
+
+class Animal(object):
+    def __init__(self):
+        print("Animal Constructor")
+        self.age = 1
+
+    def eat(self):
+        print("eat")
+
+# Animal: Parent, Base
+# Mammal: Child, Sub
+
+
+class Mammal(Animal):
+    def __init__(self):
+        super().__init__()
+        print("Mammal Constructor")
+        self.weight = 2
+    # def eat(self):
+    #     print("eat")
+
+    def walk(self):
+        print("walk")
+
+
+class Fish(Animal):
+    # def eat(self):
+    #     print("eat")
+    def swim(self):
+        print("swim")
+
+
+m = Mammal()
+# m.
+# print(isinstance(m, object))
+
+# o = object()
+# o.
+
+print(issubclass(Mammal, Animal))
+
+
+print(m.age)
+print(m.weight)
+
+# ================================Multi-level Inheritance=====================
+
+
+class Animals():
+
+    def eat(self):
+        print("eat")
+
+
+class Birds(Animals):
+    def fly(self):
+        print("fly")
+
+
+class Chickens(Birds):
+    pass
+
+# Employee -> Person -> LivingCreature -> Thing
+
+# ======================multiple Inheritance========================
+
+
+class Employee:
+    def greet(self):
+        print("Employee Greet")
+
+
+class Person:
+    def greet(self):
+        print("Person Greet")
+
+
+class Manager(Employee, Person):
+    pass
+
+
+manager = Manager()
+manager.greet()
+
+# =====================A Good Example Of Inheritance===============
+
+
+# class InvalidOperationError(Exception):
+#     pass
+
+
+# class Stream:
+#     def __init__(self):
+#         self.opened = False
+
+#     def open(self):
+#         if self.opened:
+#             raise InvalidOperationError("Stream is already open.")
+#         self.opened = True
+
+#     def close(self):
+#         if not self.opened:
+#             raise InvalidOperationError("Stream is already closed.")
+#         self.opened = False
+
+
+# class FileStream(Stream):
+#     def read(self):
+#         print("Reading data from a file.")
+
+
+# class NetworkStream(Stream):
+#     def read(self):
+#         print("Reading data from a Network.")
+
+# class MemoryStream(Stream):
+#     def read(self):
+#         print("Reading data from a Memory.")
+
+
+# stream = Stream()
+# stream.open()
+
+
+# =========================Polymorphism========================
+class UIControl(ABC):
+    @abstractmethod
+    def draw(self):
+        pass
+
+
+class TextBox(UIControl):
+    def draw(self):
+        print("TextBox")
+
+
+class DropDownList(UIControl):
+    def draw(self):
+        print("DropDownList")
+
+
+def draw(controls):
+    for control in controls:
+        control.draw()
+    # control.draw()
+
+
+ddl = DropDownList()
+tb = TextBox()
+draw([tb, ddl])
