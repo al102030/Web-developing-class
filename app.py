@@ -1,4 +1,6 @@
-from abc import ABC, abstractmethod
+# from ecommerc.shopping import sales
+# from collections import namedtuple
+# from abc import ABC, abstractmethod
 # from timeit import timeit
 # =========================Question One==============================
 # if 10 == "10":
@@ -427,88 +429,88 @@ from abc import ABC, abstractmethod
 # print("Final balance:", account.get_balance())
 
 
-class Animal(object):
-    def __init__(self):
-        print("Animal Constructor")
-        self.age = 1
+# class Animal(object):
+#     def __init__(self):
+#         print("Animal Constructor")
+#         self.age = 1
 
-    def eat(self):
-        print("eat")
+#     def eat(self):
+#         print("eat")
 
 # Animal: Parent, Base
 # Mammal: Child, Sub
 
 
-class Mammal(Animal):
-    def __init__(self):
-        super().__init__()
-        print("Mammal Constructor")
-        self.weight = 2
-    # def eat(self):
-    #     print("eat")
+# class Mammal(Animal):
+#     def __init__(self):
+#         super().__init__()
+#         print("Mammal Constructor")
+#         self.weight = 2
+# def eat(self):
+#     print("eat")
 
-    def walk(self):
-        print("walk")
-
-
-class Fish(Animal):
-    # def eat(self):
-    #     print("eat")
-    def swim(self):
-        print("swim")
+# def walk(self):
+#     print("walk")
 
 
-m = Mammal()
+# class Fish(Animal):
+# def eat(self):
+#     print("eat")
+# def swim(self):
+#     print("swim")
+
+
+# m = Mammal()
 # m.
 # print(isinstance(m, object))
 
 # o = object()
 # o.
 
-print(issubclass(Mammal, Animal))
+# print(issubclass(Mammal, Animal))
 
 
-print(m.age)
-print(m.weight)
+# print(m.age)
+# print(m.weight)
 
 # ================================Multi-level Inheritance=====================
 
 
-class Animals():
+# class Animals():
 
-    def eat(self):
-        print("eat")
-
-
-class Birds(Animals):
-    def fly(self):
-        print("fly")
+#     def eat(self):
+#         print("eat")
 
 
-class Chickens(Birds):
-    pass
+# class Birds(Animals):
+#     def fly(self):
+#         print("fly")
+
+
+# class Chickens(Birds):
+#     pass
 
 # Employee -> Person -> LivingCreature -> Thing
 
 # ======================multiple Inheritance========================
 
 
-class Employee:
-    def greet(self):
-        print("Employee Greet")
+# class Employee:
+#     def greet(self):
+#         print("Employee Greet")
 
 
-class Person:
-    def greet(self):
-        print("Person Greet")
+# class Person:
+#     def greet(self):
+#         print("Person Greet")
 
 
-class Manager(Employee, Person):
-    pass
+# class Manager(Employee, Person):
+#     pass
 
 
-manager = Manager()
-manager.greet()
+# manager = Manager()
+# manager.greet()
 
 # =====================A Good Example Of Inheritance===============
 
@@ -517,7 +519,7 @@ manager.greet()
 #     pass
 
 
-# class Stream:
+# class Stream(ABC):
 #     def __init__(self):
 #         self.opened = False
 
@@ -531,6 +533,10 @@ manager.greet()
 #             raise InvalidOperationError("Stream is already closed.")
 #         self.opened = False
 
+#     @abstractmethod
+#     def read(self):
+#         pass
+
 
 # class FileStream(Stream):
 #     def read(self):
@@ -541,38 +547,54 @@ manager.greet()
 #     def read(self):
 #         print("Reading data from a Network.")
 
+
 # class MemoryStream(Stream):
 #     def read(self):
 #         print("Reading data from a Memory.")
 
 
-# stream = Stream()
+# stream = MemoryStream()
 # stream.open()
 
 
 # =========================Polymorphism========================
-class UIControl(ABC):
-    @abstractmethod
-    def draw(self):
-        pass
+# class UIControl(ABC):
+#     @abstractmethod
+#     def draw(self):
+#         pass
 
 
-class TextBox(UIControl):
-    def draw(self):
-        print("TextBox")
+# class TextBox(UIControl):
+#     def draw(self):
+#         print("TextBox")
 
 
-class DropDownList(UIControl):
-    def draw(self):
-        print("DropDownList")
+# class DropDownList(UIControl):
+#     def draw(self):
+#         print("DropDownList")
 
 
-def draw(controls):
-    for control in controls:
-        control.draw()
-    # control.draw()
+# def draw(control):
+#     # for control in controls:
+#     #     control.draw()
+#     control.draw()
 
 
-ddl = DropDownList()
-tb = TextBox()
-draw([tb, ddl])
+# ddl = DropDownList()
+# tb = TextBox()
+# draw(tb)
+# # draw([tb, ddl])
+
+# ===============================Data Classes=====================
+# Point = namedtuple("Point", ["x", "y"])
+
+# p1 = Point(x=1, y=2)
+# p2 = Point(x=1, y=2)
+
+# print(p1 == p2)
+
+
+# ==================Modules============================
+
+# sales.clac_shipping()
+# sales.calc_tax()

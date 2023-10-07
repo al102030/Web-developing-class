@@ -453,7 +453,7 @@
 * <span style="color: #ff1199;">Duck Typing</span>
    * If something like duck and quacks like duck, it's a duck
    * Python is dynamically type language and it doesn't check the type of object.
-   * if a certain method exist in object python accept it ass abstract base method
+   * if a certain method exist in object python accept it as abstract base method
 * <span style="color: #ff1199;">Extending Built-it Types</span>
    * We can extend a built-in class like string class in python and give it more functionality by define a new class
    * ![](MyNoteImages/44.png)
@@ -464,3 +464,50 @@
    * We can use namedtuple library to define a class that have only data
    * ![](MyNoteImages/46.png)
    * namedtuples are immutable
+### <span style="color: #03ce14;">Modules</span>
+* <span style="color: #1f9999;">Creating Modules</span>
+   * A real program can contain tens of thousand lines of code
+   * We write python code in separate modules
+   * Each module contain highly related objects (functions, variables, classes, etc.)
+   * We can use objects in one file inside of another file by call theme by from ... import statement 
+   * Using * to import all objects in a module can caused a overwriting and malfunction
+   * If we used import statement only we should call objects by adding module name before of any object (sales.calc_tax())
+* <span style="color: #1f9999;">Compiled Python Files</span>
+   * When we import a module inside another module python after first time running code make a compiled version of module to speed up in code execution later
+   * Name of the compiled file contain the version of cpython that used to execute this code
+   * These files contain python bytecodes
+* <span style="color: #1f9999;">Module Search Path</span>
+   * ![](MyNoteImages/47.png)
+* <span style="color: #1f9999;">Packages</span>
+   * We we want to organize our python files in separate directories we should make packages
+   * Add __init__.py file to a directory convert it to a python package
+   * A package is container for one or more modules
+   * ![](MyNoteImages/48.png)
+* <span style="color: #1f9999;">Sub-Packages</span>
+   * After add new directory we should add __init__ file
+   * And make change in import statement
+* <span style="color: #1f9999;">Intra-packages References</span>
+   * To import a module inside another module of another package we can use absolute ot relative statement
+   * Absolute import is better and PEP* recommend it
+   * ![](MyNoteImages/49.png)
+* <span style="color: #1f9999;">The dir() Function</span>
+   * dir() is a built-function that show all methods inside a module
+   * ![](MyNoteImages/50.png)
+   * ![](MyNoteImages/51.png)
+* <span style="color: #1f9999;">Executing Modules as Script</span>
+   * When a module load for the first time all statement in it will be executed
+   * The name of the module that starts our program is always __main__
+   * After add "if __name__ == "__main__":" to a module when run in directly the the block code of it will be executed. but when imported it into another file this part of code will be ignored.
+   * by this way we make this file useable as script as well as reuseable module that we can import into another module
+### <span style="color: #03ce14;">Python Standard Library</span>
+* <span style="color: #995511;">Working With Path</span>
+   * After import path library we ca use it in different ways
+   * ![](MyNoteImages/52.png)
+   * search python 3 pathlibnin google
+   * The most important members of this library is :
+   * ![](MyNoteImages/53.png)
+* <span style="color: #995511;">Working With Directories</span>
+   * Important methods in Pathlib library for work with directories
+   * ![](MyNoteImages/54.png)
+* <span style="color: #995511;">Working With Files</span>
+   * Useful methods to working with files:
