@@ -2,6 +2,14 @@
 # from collections import namedtuple
 # from abc import ABC, abstractmethod
 # from timeit import timeit
+# from pathlib import Path
+# from time import ctime
+# import shutil
+# import csv
+import json
+import sqlite3
+import time
+from datetime import datetime
 # =========================Question One==============================
 # if 10 == "10":
 #     print("a")
@@ -594,7 +602,90 @@
 # print(p1 == p2)
 
 
-# ==================Modules============================
+# =============================================Modules======================================
 
 # sales.clac_shipping()
 # sales.calc_tax()
+
+# =======================================Python Standard Libraries===========================
+# path = Path("commerce")
+
+# print(path.exists())
+# print(path.absolute())
+
+# for item in path.iterdir():
+#     print(item)
+
+# lst = [p for p in path.iterdir() if p.is_dir()]
+# py_files = [p for p in path.rglob("*.py")]
+# print(py_files)
+
+# path = Path("commerce/__init__.py")
+# print(path.stat())
+# print(ctime(path.stat().st_ctime))
+# print(path.read_text())
+
+
+# source = Path("commerce/__init__.py")
+# target = Path() / "__init__.py"
+
+# shutil.copy(source, target)
+# target.write_text(source.read_text())
+
+# with open("data.csv", "w") as file:
+#     writer = csv.writer(file)
+#     writer.writerow(["trns_id", "pro_id", "price"])
+#     writer.writerow([1000, 1, 10])
+#     writer.writerow([2000, 2, 15])
+
+# with open("data.csv", "r") as file:
+#     reader = csv.reader(file)
+#     # print(list(reader))
+#     for row in reader:
+#         print(row)
+
+
+# movies = [
+#     {"id": 1, "title": "Terminator", "year": 1989},
+#     {"id": 2, "title": "GodFather", "year": 1976}
+# ]
+
+# data = json.dumps(movies)
+# print(data)
+# Path("movies.json").write_text(data)
+
+# data = Path("movies.json").read_text(encoding="utf-8")
+# movies = json.loads(data)
+# print(movies[0]["title"])
+
+# movies = json.loads(Path("movies.json").read_text(encoding="utf-8"))
+
+
+# connection = sqlite3.connect("db.sqlite3")
+# with sqlite3.connect("db.sqlite3") as conn:
+#     command = "INSERT INTO Movies VALUES(?, ?, ?)"
+#     for movie in movies:
+#         conn.execute(command, tuple(movie.values()))
+#     conn.commit()
+
+with sqlite3.connect("db.sqlite3") as conn:
+    command = "SELECT * from Movies"
+    cursor = conn.execute(command)
+    # for item in cursor:
+    #     print(item)
+    movies = cursor.fetchall()
+    print(movies)
+
+
+print(time.time())
+
+
+dt1 = datetime(2018, 1, 1)
+dt2 = datetime.now()
+dt = datetime.strptime("2018/01/01", "%Y/%m/%d")
+dt = datetime.fromtimestamp(time.time())
+print(dt)
+
+print(f"{dt.year}/{dt.month}")
+
+print(dt1 > dt2)

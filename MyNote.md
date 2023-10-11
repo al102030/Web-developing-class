@@ -509,5 +509,41 @@
 * <span style="color: #995511;">Working With Directories</span>
    * Important methods in Pathlib library for work with directories
    * ![](MyNoteImages/54.png)
+   * We use iterdir() method to get list of files and directories in a particular directory
+   * We use rglob() methd to fiand files based on a pattern
 * <span style="color: #995511;">Working With Files</span>
    * Useful methods to working with files:
+   * ![](MyNoteImages/55.png)
+   * We can use shutel library to copy files instead of using read_text(_) or write_text() methods
+   * ![](MyNoteImages/56.png)
+* <span style="color: #995511;">Working With ZIP and CSV Files</span>
+   * To work with zip file Use zipfile library
+   * To work with CSV file Use csv library
+   * csv is acronym for comma separated values
+   * After importing csv module we use open built-in function to open a csv file
+   * By using writer method we can built a csv file and write data in it
+   * By using reader method we can read from a csv file and by using list method we can make a list of csv rows
+* <span style="color: #995511;">Working With JSON Files</span>
+   * JSON is javaScript Object Notation
+   * We use JSON to format data in human readable way
+   * To answer the requests that ask some data from your website you need to answer in JSON format
+   * Note that dump and load convert between files and objects, while dumps and loads convert between strings and objects
+* <span style="color: #995511;">Working With SQLite Database</span>
+   * SQLite is very light weight Database that we use to store data of an application
+   * We can use SQLite Database browser to manage our sqlite db file in visual (download from google)
+   * ![](MyNoteImages/57.png)
+   * Insert data into database using a SQL INSERT query text
+   * Read data from database using a SQL SELECT query text
+   * When we try to read from database we'll get cursor
+* <span style="color: #995511;">Working With Timestamps</span>
+   * To work with time and date in python we can use to module (time, datetime)
+   * Time module return timestamp and datetime module return an object that contain many attributes like year, moth, etc.
+   * Start of timestamp in unix base systems is 1970-1-1 and timestamp demonstrate all seconds from that time
+   * ![](MyNoteImages/58.png)
+* <span style="color: #995511;">Working With DatetTimes</span>
+   * DateTime object can convert a date time to python object
+   * DateTime can show current date time by method now()
+   * DataTime object can convert strings to real datetime by strptime() method (by using a pattern like ("%Y/%m/%d"))
+   * Search Python 3 Strptime in google
+   * DataTime object can convert datetime object to string bu strftime() method
+   * we can compare datetime objects
