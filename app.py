@@ -668,24 +668,25 @@ from datetime import datetime
 #         conn.execute(command, tuple(movie.values()))
 #     conn.commit()
 
-with sqlite3.connect("db.sqlite3") as conn:
-    command = "SELECT * from Movies"
-    cursor = conn.execute(command)
-    # for item in cursor:
-    #     print(item)
-    movies = cursor.fetchall()
-    print(movies)
+# with sqlite3.connect("db.sqlite3") as conn:
+#     command = "SELECT * from Movies"
+#     cursor = conn.execute(command)
+#     # for item in cursor:
+#     #     print(item)
+#     movies = cursor.fetchall()
+#     print(movies)
 
 
-print(time.time())
+# print(time.time())
 
 
-dt1 = datetime(2018, 1, 1)
-dt2 = datetime.now()
-dt = datetime.strptime("2018/01/01", "%Y/%m/%d")
+# dt1 = datetime(2018, 1, 1)
+# dt2 = datetime.now()
+# dt = datetime.strptime("2018/01/01", "%Y/%m/%d")
 dt = datetime.fromtimestamp(time.time())
-print(dt)
+# print(dt)
 
-print(f"{dt.year}/{dt.month}")
+# print(f"{dt.year}/{dt.month}")
+print(dt.strftime("%Y/%m"))
 
-print(dt1 > dt2)
+# print(dt1 > dt2)

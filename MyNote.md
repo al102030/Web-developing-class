@@ -531,6 +531,7 @@
 * <span style="color: #995511;">Working With SQLite Database</span>
    * SQLite is very light weight Database that we use to store data of an application
    * We can use SQLite Database browser to manage our sqlite db file in visual (download from google)
+   * We use connect method to create a new database or connect to an existent database
    * ![](MyNoteImages/57.png)
    * Insert data into database using a SQL INSERT query text
    * Read data from database using a SQL SELECT query text
@@ -545,5 +546,39 @@
    * DateTime can show current date time by method now()
    * DataTime object can convert strings to real datetime by strptime() method (by using a pattern like ("%Y/%m/%d"))
    * Search Python 3 Strptime in google
-   * DataTime object can convert datetime object to string bu strftime() method
+   * DataTime object can convert datetime object to string by strftime() method
    * we can compare datetime objects
+* <span style="color: #995511;">Generating Random Values</span>
+   * We can make random values by using random module
+   * ![](MyNoteImages/59.png)
+   * We use 'string' module to give choices method all ascii letters and numbers to generate a good password
+### <span style="color: #03ce14;">Python Package Index</span>
+* <span style="color: #990088;">Pypi</span>
+   * There are times that we need features that not implemented in the Python standard libraries
+   * We use Pypi(Python Packaging Index) to import lots of useful libraries to our program
+   * Visit pypi.org and search on it to find your desireable package
+   * Search in google = "Best python packages for working with ..."
+* <span style="color: #990088;">Pip</span>
+   * We use tool named pip to manage our packages
+   * use pip install "package-name" to install a package
+   * we can use "pip list to check our installed packages"
+   * Check a package like requests in pypi.org
+   * By adding "==" and the a specific version we can install an earlier or older version of a package(requests==2.9.*)
+   * use pip uninstall "package-name" to uninstall a package
+   * import an installed packages in python file as example
+   * ![](MyNoteImages/60.png)
+* <span style="color: #990088;">Virtual Environments</span>
+   * When we need to work with 2 different version of a package in two separated project simultaneously we should create a virtual environment for each of them
+   * By "python -m venv env" we make a virtual environment for our project
+   * Our packages would be installed inside the site-packages directory
+   * In windows to active the virtual environment we should :
+   * ![](MyNoteImages/61.png)
+   * We use "deactivate" command to deactivate venv
+* <span style="color: #990088;">Pipenv</span>
+   * Pipenv is tool that combine pip with virtual environment to a single tool
+   * Install pipenv using pip first
+   * To install packages using pipenv we use pipenv instead of pip in pip install command
+   * We can locate our new virtual environment by command: "pipenv --venv"
+   * We activate our virtual environment by this command : "pipenv shell" and deactivate it by "exit"
+   *  In vs code we need some configuration to use pipenv
+   *  "pydoc3 math" show the documentation of math library.
